@@ -1,0 +1,4216 @@
+{
+  "tenants": [
+    {
+      "id": "t-sonrisa",
+      "nombre": "Consultorio Dental Sonrisa MX",
+      "vertical": "dental",
+      "plan": "trial",
+      "slug": "sonrisa-mx",
+      "colores": {
+        "primario": "#0D6E5F",
+        "acento": "#F2B01E",
+        "fondo": "#FAF7F0"
+      },
+      "logo_url": null,
+      "cedula_profesional": "12345678",
+      "direccion": "Av. Insurgentes Sur 1234, Col. Del Valle, Ciudad de México",
+      "doctor_nombre": "Dra. Mariana Solís",
+      "servicios": [
+        "Limpieza dental",
+        "Diseño de sonrisa",
+        "Blanqueamiento",
+        "Resinas",
+        "Revisión general"
+      ],
+      "fotos": [],
+      "pagina_titular": null,
+      "pagina_descripcion": null,
+      "onboarding_completado": true,
+      "tono_respuestas": "cercano",
+      "autopublicar_resenas": false,
+      "autopublicar_consent_at": null,
+      "founder_price": false,
+      "estado_suscripcion": "trial",
+      "stripe_customer_id": null,
+      "stripe_subscription_id": null,
+      "trial_ends_at": "2026-09-04T15:36:25.746Z",
+      "created_at": "2026-08-21T15:36:25.746Z"
+    },
+    {
+      "id": "t-aura",
+      "nombre": "Estética Aura",
+      "vertical": "estetica",
+      "plan": "trial",
+      "slug": "estetica-aura",
+      "colores": {
+        "primario": "#0D6E5F",
+        "acento": "#F2B01E",
+        "fondo": "#FAF7F0"
+      },
+      "logo_url": null,
+      "cedula_profesional": "87654321",
+      "direccion": "Blvd. Ávila Camacho 88, Guadalajara, Jalisco",
+      "doctor_nombre": "Dra. Fernanda Ríos",
+      "servicios": [
+        "Facial hidratante",
+        "Depilación láser",
+        "Limpieza profunda",
+        "Masaje relajante",
+        "Peeling suave"
+      ],
+      "fotos": [],
+      "pagina_titular": null,
+      "pagina_descripcion": null,
+      "onboarding_completado": true,
+      "tono_respuestas": "cercano",
+      "autopublicar_resenas": false,
+      "autopublicar_consent_at": null,
+      "founder_price": false,
+      "estado_suscripcion": "trial",
+      "stripe_customer_id": null,
+      "stripe_subscription_id": null,
+      "trial_ends_at": "2026-09-04T15:36:25.746Z",
+      "created_at": "2026-08-21T15:36:25.746Z"
+    },
+    {
+      "id": "t-vital",
+      "nombre": "Centro Vital Control de Peso",
+      "vertical": "peso",
+      "plan": "trial",
+      "slug": "centro-vital",
+      "colores": {
+        "primario": "#0D6E5F",
+        "acento": "#F2B01E",
+        "fondo": "#FAF7F0"
+      },
+      "logo_url": null,
+      "cedula_profesional": "11223344",
+      "direccion": "Calzada del Valle 450, San Pedro Garza García, Nuevo León",
+      "doctor_nombre": "Dr. Rodrigo Peña",
+      "servicios": [
+        "Consulta de valoración",
+        "Plan de alimentación",
+        "Seguimiento mensual",
+        "Reeducación alimentaria"
+      ],
+      "fotos": [],
+      "pagina_titular": null,
+      "pagina_descripcion": null,
+      "onboarding_completado": true,
+      "tono_respuestas": "cercano",
+      "autopublicar_resenas": false,
+      "autopublicar_consent_at": null,
+      "founder_price": false,
+      "estado_suscripcion": "trial",
+      "stripe_customer_id": null,
+      "stripe_subscription_id": null,
+      "trial_ends_at": "2026-09-04T15:36:25.746Z",
+      "created_at": "2026-08-21T15:36:25.746Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "u-t-sonrisa",
+      "tenant_id": "t-sonrisa",
+      "rol": "dueno",
+      "nombre": "Dra. Mariana Solís",
+      "email": "mariana@sonrisamx.mx",
+      "password_hash": "ebd-seed-salt:74f20abce663919fa784357379a8ad14bbeb605e1a93c1f37cbfc37e4dd395ff",
+      "whatsapp_personal": "+5215511223344",
+      "created_at": "2026-08-21T15:36:25.746Z"
+    },
+    {
+      "id": "u-t-aura",
+      "tenant_id": "t-aura",
+      "rol": "dueno",
+      "nombre": "Dra. Fernanda Ríos",
+      "email": "fernanda@esteticaaura.mx",
+      "password_hash": "ebd-seed-salt:74f20abce663919fa784357379a8ad14bbeb605e1a93c1f37cbfc37e4dd395ff",
+      "whatsapp_personal": "+5215511223344",
+      "created_at": "2026-08-21T15:36:25.746Z"
+    },
+    {
+      "id": "u-t-vital",
+      "tenant_id": "t-vital",
+      "rol": "dueno",
+      "nombre": "Dr. Rodrigo Peña",
+      "email": "rodrigo@centrovital.mx",
+      "password_hash": "ebd-seed-salt:74f20abce663919fa784357379a8ad14bbeb605e1a93c1f37cbfc37e4dd395ff",
+      "whatsapp_personal": "+5215511223344",
+      "created_at": "2026-08-21T15:36:25.746Z"
+    }
+  ],
+  "wa_accounts": [
+    {
+      "id": "wa-t-sonrisa",
+      "tenant_id": "t-sonrisa",
+      "proveedor": "gupshup",
+      "waba_id": null,
+      "phone_number_id": null,
+      "numero_display": "+52 55 1234 5678",
+      "quality_rating": "green",
+      "messaging_tier": 1,
+      "estado": "activo",
+      "created_at": "2026-08-21T15:36:25.746Z"
+    },
+    {
+      "id": "wa-t-aura",
+      "tenant_id": "t-aura",
+      "proveedor": "gupshup",
+      "waba_id": null,
+      "phone_number_id": null,
+      "numero_display": "+52 55 1234 5678",
+      "quality_rating": "green",
+      "messaging_tier": 1,
+      "estado": "activo",
+      "created_at": "2026-08-21T15:36:25.746Z"
+    },
+    {
+      "id": "wa-t-vital",
+      "tenant_id": "t-vital",
+      "proveedor": "gupshup",
+      "waba_id": null,
+      "phone_number_id": null,
+      "numero_display": "+52 55 1234 5678",
+      "quality_rating": "green",
+      "messaging_tier": 1,
+      "estado": "activo",
+      "created_at": "2026-08-21T15:36:25.746Z"
+    }
+  ],
+  "google_accounts": [
+    {
+      "id": "g-t-sonrisa",
+      "tenant_id": "t-sonrisa",
+      "gbp_location_id": null,
+      "place_id": "place-seed-sonrisa-mx",
+      "oauth_tokens_cifrados": null,
+      "modo": "degradado",
+      "negocio_nombre": "Consultorio Dental Sonrisa MX",
+      "ultima_sync": "2026-08-21T15:36:25.746Z",
+      "created_at": "2026-08-21T15:36:25.746Z"
+    },
+    {
+      "id": "g-t-aura",
+      "tenant_id": "t-aura",
+      "gbp_location_id": null,
+      "place_id": "place-seed-estetica-aura",
+      "oauth_tokens_cifrados": null,
+      "modo": "degradado",
+      "negocio_nombre": "Estética Aura",
+      "ultima_sync": "2026-08-21T15:36:25.746Z",
+      "created_at": "2026-08-21T15:36:25.746Z"
+    },
+    {
+      "id": "g-t-vital",
+      "tenant_id": "t-vital",
+      "gbp_location_id": null,
+      "place_id": "place-seed-centro-vital",
+      "oauth_tokens_cifrados": null,
+      "modo": "degradado",
+      "negocio_nombre": "Centro Vital Control de Peso",
+      "ultima_sync": "2026-08-21T15:36:25.746Z",
+      "created_at": "2026-08-21T15:36:25.746Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "r-0",
+      "tenant_id": "t-sonrisa",
+      "review_id_google": "g-review-seed-0",
+      "rating": 4,
+      "texto": "Excelente atención, desde recepción hasta la consulta. Muy puntuales.",
+      "autor_nombre": "Carmen López",
+      "fecha_review": "2026-08-01T12:10:00.000Z",
+      "respondida": true,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "estado": "publicada",
+      "created_at": "2026-08-01T12:02:00.000Z"
+    },
+    {
+      "id": "r-1",
+      "tenant_id": "t-aura",
+      "review_id_google": "g-review-seed-1",
+      "rating": 4,
+      "texto": "Muy buena experiencia, el trato fue cálido y respetuoso en todo momento.",
+      "autor_nombre": "José Hernández",
+      "fecha_review": "2026-07-19T12:36:00.000Z",
+      "respondida": true,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "estado": "publicada",
+      "created_at": "2026-07-19T12:25:00.000Z"
+    },
+    {
+      "id": "r-2",
+      "tenant_id": "t-vital",
+      "review_id_google": "g-review-seed-2",
+      "rating": 2,
+      "texto": "Esperé casi una hora y nadie me avisó del retraso. Mala organización.",
+      "autor_nombre": "Andrés Delgado",
+      "fecha_review": "2026-06-22T12:57:00.000Z",
+      "respondida": false,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": null,
+      "estado": "ignorada",
+      "created_at": "2026-06-22T12:23:00.000Z"
+    },
+    {
+      "id": "r-3",
+      "tenant_id": "t-sonrisa",
+      "review_id_google": "g-review-seed-3",
+      "rating": 5,
+      "texto": "El seguimiento después de la consulta fue un detalle que se agradece.",
+      "autor_nombre": "Lucía Salazar",
+      "fecha_review": "2026-08-05T12:18:00.000Z",
+      "respondida": true,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "estado": "publicada",
+      "created_at": "2026-08-05T12:47:00.000Z"
+    },
+    {
+      "id": "r-4",
+      "tenant_id": "t-aura",
+      "review_id_google": "g-review-seed-4",
+      "rating": 5,
+      "texto": "Me atendieron con mucho profesionalismo y el lugar está impecable.",
+      "autor_nombre": "Elena Ríos",
+      "fecha_review": "2026-07-25T12:55:00.000Z",
+      "respondida": true,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "estado": "publicada",
+      "created_at": "2026-07-25T12:23:00.000Z"
+    },
+    {
+      "id": "r-5",
+      "tenant_id": "t-vital",
+      "review_id_google": "g-review-seed-5",
+      "rating": 4,
+      "texto": "Me atendieron con mucho profesionalismo y el lugar está impecable.",
+      "autor_nombre": "José Hernández",
+      "fecha_review": "2026-08-14T12:47:00.000Z",
+      "respondida": true,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "estado": "publicada",
+      "created_at": "2026-08-14T12:40:00.000Z"
+    },
+    {
+      "id": "r-6",
+      "tenant_id": "t-sonrisa",
+      "review_id_google": "g-review-seed-6",
+      "rating": 5,
+      "texto": "El doctor explicó todo con calma y respondió mis dudas. Lo recomiendo.",
+      "autor_nombre": "Ana Martínez",
+      "fecha_review": "2026-08-06T12:52:00.000Z",
+      "respondida": true,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "estado": "publicada",
+      "created_at": "2026-08-06T12:14:00.000Z"
+    },
+    {
+      "id": "r-7",
+      "tenant_id": "t-aura",
+      "review_id_google": "g-review-seed-7",
+      "rating": 3,
+      "texto": "Me atendieron bien, aunque tuve que confirmar mi cita dos veces.",
+      "autor_nombre": "Miguel Torres",
+      "fecha_review": "2026-08-11T12:21:00.000Z",
+      "respondida": false,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": null,
+      "estado": "ignorada",
+      "created_at": "2026-08-11T12:31:00.000Z"
+    },
+    {
+      "id": "r-8",
+      "tenant_id": "t-vital",
+      "review_id_google": "g-review-seed-8",
+      "rating": 5,
+      "texto": "El doctor explicó todo con calma y respondió mis dudas. Lo recomiendo.",
+      "autor_nombre": "Gabriel Navarro",
+      "fecha_review": "2026-07-17T12:02:00.000Z",
+      "respondida": true,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "estado": "publicada",
+      "created_at": "2026-07-17T12:02:00.000Z"
+    },
+    {
+      "id": "r-9",
+      "tenant_id": "t-sonrisa",
+      "review_id_google": "g-review-seed-9",
+      "rating": 5,
+      "texto": "Muy buena experiencia, el trato fue cálido y respetuoso en todo momento.",
+      "autor_nombre": "Carmen López",
+      "fecha_review": "2026-08-18T12:47:00.000Z",
+      "respondida": true,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "estado": "publicada",
+      "created_at": "2026-08-18T12:54:00.000Z"
+    },
+    {
+      "id": "r-10",
+      "tenant_id": "t-aura",
+      "review_id_google": "g-review-seed-10",
+      "rating": 2,
+      "texto": "El trato en recepción fue seco y poco amable. El doctor, eso sí, muy bien.",
+      "autor_nombre": "Lucía Salazar",
+      "fecha_review": "2026-07-20T12:56:00.000Z",
+      "respondida": false,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": null,
+      "estado": "ignorada",
+      "created_at": "2026-07-20T12:31:00.000Z"
+    },
+    {
+      "id": "r-11",
+      "tenant_id": "t-vital",
+      "review_id_google": "g-review-seed-11",
+      "rating": 5,
+      "texto": "Muy buena experiencia, el trato fue cálido y respetuoso en todo momento.",
+      "autor_nombre": "Carmen López",
+      "fecha_review": "2026-07-06T12:58:00.000Z",
+      "respondida": true,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "estado": "publicada",
+      "created_at": "2026-07-06T12:45:00.000Z"
+    },
+    {
+      "id": "r-12",
+      "tenant_id": "t-sonrisa",
+      "review_id_google": "g-review-seed-12",
+      "rating": 5,
+      "texto": "Instalaciones modernas y limpias. El personal es muy amable.",
+      "autor_nombre": "Carlos Morales",
+      "fecha_review": "2026-08-16T12:13:00.000Z",
+      "respondida": true,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "estado": "publicada",
+      "created_at": "2026-08-16T12:37:00.000Z"
+    },
+    {
+      "id": "r-13",
+      "tenant_id": "t-aura",
+      "review_id_google": "g-review-seed-13",
+      "rating": 4,
+      "texto": "Bajé 12 kilos con ozempic y el acompañamiento del doctor. ¡Garantizado que funciona!",
+      "autor_nombre": "Elena Ríos",
+      "fecha_review": "2026-07-25T12:26:00.000Z",
+      "respondida": true,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "estado": "publicada",
+      "created_at": "2026-07-25T12:09:00.000Z"
+    },
+    {
+      "id": "r-14",
+      "tenant_id": "t-vital",
+      "review_id_google": "g-review-seed-14",
+      "rating": 4,
+      "texto": "El doctor explicó todo con calma y respondió mis dudas. Lo recomiendo.",
+      "autor_nombre": "Miguel Torres",
+      "fecha_review": "2026-06-29T12:36:00.000Z",
+      "respondida": true,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "estado": "publicada",
+      "created_at": "2026-06-29T12:22:00.000Z"
+    },
+    {
+      "id": "r-15",
+      "tenant_id": "t-sonrisa",
+      "review_id_google": "g-review-seed-15",
+      "rating": 3,
+      "texto": "La atención bien, aunque esperé más de lo que me dijeron.",
+      "autor_nombre": "Carlos Morales",
+      "fecha_review": "2026-07-31T12:17:00.000Z",
+      "respondida": false,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": null,
+      "estado": "ignorada",
+      "created_at": "2026-07-31T12:40:00.000Z"
+    },
+    {
+      "id": "r-16",
+      "tenant_id": "t-aura",
+      "review_id_google": "g-review-seed-16",
+      "rating": 3,
+      "texto": "Buen servicio, pero el estacionamiento es complicado.",
+      "autor_nombre": "Valeria Campos",
+      "fecha_review": "2026-08-09T12:44:00.000Z",
+      "respondida": false,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": null,
+      "estado": "ignorada",
+      "created_at": "2026-08-09T12:13:00.000Z"
+    },
+    {
+      "id": "r-17",
+      "tenant_id": "t-vital",
+      "review_id_google": "g-review-seed-17",
+      "rating": 4,
+      "texto": "El seguimiento después de la consulta fue un detalle que se agradece.",
+      "autor_nombre": "María González",
+      "fecha_review": "2026-06-26T12:10:00.000Z",
+      "respondida": true,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "estado": "publicada",
+      "created_at": "2026-06-26T12:58:00.000Z"
+    },
+    {
+      "id": "r-18",
+      "tenant_id": "t-sonrisa",
+      "review_id_google": "g-review-seed-18",
+      "rating": 5,
+      "texto": "El seguimiento después de la consulta fue un detalle que se agradece.",
+      "autor_nombre": "Jorge Ramírez",
+      "fecha_review": "2026-08-11T12:37:00.000Z",
+      "respondida": true,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "estado": "publicada",
+      "created_at": "2026-08-11T12:35:00.000Z"
+    },
+    {
+      "id": "r-19",
+      "tenant_id": "t-aura",
+      "review_id_google": "g-review-seed-19",
+      "rating": 2,
+      "texto": "El trato en recepción fue seco y poco amable. El doctor, eso sí, muy bien.",
+      "autor_nombre": "Ricardo Ortiz",
+      "fecha_review": "2026-07-26T12:03:00.000Z",
+      "respondida": false,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": null,
+      "estado": "ignorada",
+      "created_at": "2026-07-26T12:13:00.000Z"
+    },
+    {
+      "id": "r-20",
+      "tenant_id": "t-vital",
+      "review_id_google": "g-review-seed-20",
+      "rating": 4,
+      "texto": "Puntuales y profesionales. Salí muy contenta de mi consulta.",
+      "autor_nombre": "María González",
+      "fecha_review": "2026-07-30T12:10:00.000Z",
+      "respondida": true,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "estado": "publicada",
+      "created_at": "2026-07-30T12:29:00.000Z"
+    },
+    {
+      "id": "r-21",
+      "tenant_id": "t-sonrisa",
+      "review_id_google": "g-review-seed-21",
+      "rating": 2,
+      "texto": "Caro para lo que ofrecen y no me respetaron la promoción anunciada.",
+      "autor_nombre": "Laura Vázquez",
+      "fecha_review": "2026-07-23T12:11:00.000Z",
+      "respondida": false,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": null,
+      "estado": "ignorada",
+      "created_at": "2026-07-23T12:13:00.000Z"
+    },
+    {
+      "id": "r-22",
+      "tenant_id": "t-aura",
+      "review_id_google": "g-review-seed-22",
+      "rating": 4,
+      "texto": "Puntuales y profesionales. Salí muy contenta de mi consulta.",
+      "autor_nombre": "Carmen López",
+      "fecha_review": "2026-08-11T12:45:00.000Z",
+      "respondida": true,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "estado": "publicada",
+      "created_at": "2026-08-11T12:34:00.000Z"
+    },
+    {
+      "id": "r-23",
+      "tenant_id": "t-vital",
+      "review_id_google": "g-review-seed-23",
+      "rating": 4,
+      "texto": "Puntuales y profesionales. Salí muy contenta de mi consulta.",
+      "autor_nombre": "Miguel Torres",
+      "fecha_review": "2026-07-02T12:16:00.000Z",
+      "respondida": true,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "estado": "publicada",
+      "created_at": "2026-07-02T12:41:00.000Z"
+    },
+    {
+      "id": "r-24",
+      "tenant_id": "t-sonrisa",
+      "review_id_google": "g-review-seed-24",
+      "rating": 4,
+      "texto": "El doctor explicó todo con calma y respondió mis dudas. Lo recomiendo.",
+      "autor_nombre": "Lucía Salazar",
+      "fecha_review": "2026-07-02T12:27:00.000Z",
+      "respondida": true,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "estado": "publicada",
+      "created_at": "2026-07-02T12:04:00.000Z"
+    },
+    {
+      "id": "r-25",
+      "tenant_id": "t-aura",
+      "review_id_google": "g-review-seed-25",
+      "rating": 4,
+      "texto": "Excelente atención, desde recepción hasta la consulta. Muy puntuales.",
+      "autor_nombre": "Fernando Castro",
+      "fecha_review": "2026-06-29T12:57:00.000Z",
+      "respondida": true,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "estado": "publicada",
+      "created_at": "2026-06-29T12:55:00.000Z"
+    },
+    {
+      "id": "r-26",
+      "tenant_id": "t-vital",
+      "review_id_google": "g-review-seed-26",
+      "rating": 2,
+      "texto": "Caro para lo que ofrecen y no me respetaron la promoción anunciada.",
+      "autor_nombre": "Jorge Ramírez",
+      "fecha_review": "2026-07-10T12:58:00.000Z",
+      "respondida": false,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": null,
+      "estado": "ignorada",
+      "created_at": "2026-07-10T12:06:00.000Z"
+    },
+    {
+      "id": "r-27",
+      "tenant_id": "t-sonrisa",
+      "review_id_google": "g-review-seed-27",
+      "rating": 5,
+      "texto": "Muy buena experiencia, el trato fue cálido y respetuoso en todo momento.",
+      "autor_nombre": "Andrés Delgado",
+      "fecha_review": "2026-07-22T12:30:00.000Z",
+      "respondida": true,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "estado": "publicada",
+      "created_at": "2026-07-22T12:37:00.000Z"
+    },
+    {
+      "id": "r-28",
+      "tenant_id": "t-aura",
+      "review_id_google": "g-review-seed-28",
+      "rating": 4,
+      "texto": "Excelente atención, desde recepción hasta la consulta. Muy puntuales.",
+      "autor_nombre": "Carmen López",
+      "fecha_review": "2026-07-26T12:19:00.000Z",
+      "respondida": true,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "estado": "publicada",
+      "created_at": "2026-07-26T12:11:00.000Z"
+    },
+    {
+      "id": "r-29",
+      "tenant_id": "t-vital",
+      "review_id_google": "g-review-seed-29",
+      "rating": 4,
+      "texto": "Muy buena experiencia, el trato fue cálido y respetuoso en todo momento.",
+      "autor_nombre": "Elena Ríos",
+      "fecha_review": "2026-07-01T12:25:00.000Z",
+      "respondida": true,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "estado": "publicada",
+      "created_at": "2026-07-01T12:33:00.000Z"
+    },
+    {
+      "id": "r-30",
+      "tenant_id": "t-sonrisa",
+      "review_id_google": "g-review-seed-30",
+      "rating": 3,
+      "texto": "Buen servicio, pero el estacionamiento es complicado.",
+      "autor_nombre": "Carmen López",
+      "fecha_review": "2026-06-30T12:48:00.000Z",
+      "respondida": false,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": null,
+      "estado": "ignorada",
+      "created_at": "2026-06-30T12:18:00.000Z"
+    },
+    {
+      "id": "r-31",
+      "tenant_id": "t-aura",
+      "review_id_google": "g-review-seed-31",
+      "rating": 3,
+      "texto": "La atención bien, aunque esperé más de lo que me dijeron.",
+      "autor_nombre": "Carmen López",
+      "fecha_review": "2026-07-14T12:27:00.000Z",
+      "respondida": false,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": null,
+      "estado": "ignorada",
+      "created_at": "2026-07-14T12:00:00.000Z"
+    },
+    {
+      "id": "r-32",
+      "tenant_id": "t-vital",
+      "review_id_google": "g-review-seed-32",
+      "rating": 5,
+      "texto": "Puntuales y profesionales. Salí muy contenta de mi consulta.",
+      "autor_nombre": "María González",
+      "fecha_review": "2026-08-10T12:10:00.000Z",
+      "respondida": true,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "estado": "publicada",
+      "created_at": "2026-08-10T12:27:00.000Z"
+    },
+    {
+      "id": "r-33",
+      "tenant_id": "t-sonrisa",
+      "review_id_google": "g-review-seed-33",
+      "rating": 5,
+      "texto": "Me atendieron con mucho profesionalismo y el lugar está impecable.",
+      "autor_nombre": "Lucía Salazar",
+      "fecha_review": "2026-06-25T12:02:00.000Z",
+      "respondida": true,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "estado": "publicada",
+      "created_at": "2026-06-25T12:34:00.000Z"
+    },
+    {
+      "id": "r-34",
+      "tenant_id": "t-aura",
+      "review_id_google": "g-review-seed-34",
+      "rating": 5,
+      "texto": "Excelente atención, desde recepción hasta la consulta. Muy puntuales.",
+      "autor_nombre": "Ricardo Ortiz",
+      "fecha_review": "2026-07-10T12:07:00.000Z",
+      "respondida": true,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "estado": "publicada",
+      "created_at": "2026-07-10T12:52:00.000Z"
+    },
+    {
+      "id": "r-35",
+      "tenant_id": "t-vital",
+      "review_id_google": "g-review-seed-35",
+      "rating": 4,
+      "texto": "Puntuales y profesionales. Salí muy contenta de mi consulta.",
+      "autor_nombre": "Laura Vázquez",
+      "fecha_review": "2026-06-28T12:02:00.000Z",
+      "respondida": true,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "estado": "publicada",
+      "created_at": "2026-06-28T12:08:00.000Z"
+    },
+    {
+      "id": "r-36",
+      "tenant_id": "t-sonrisa",
+      "review_id_google": "g-review-seed-36",
+      "rating": 5,
+      "texto": "El seguimiento después de la consulta fue un detalle que se agradece.",
+      "autor_nombre": "Laura Vázquez",
+      "fecha_review": "2026-08-14T12:53:00.000Z",
+      "respondida": true,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "estado": "publicada",
+      "created_at": "2026-08-14T12:37:00.000Z"
+    },
+    {
+      "id": "r-37",
+      "tenant_id": "t-aura",
+      "review_id_google": "g-review-seed-37",
+      "rating": 5,
+      "texto": "Instalaciones modernas y limpias. El personal es muy amable.",
+      "autor_nombre": "Carmen López",
+      "fecha_review": "2026-07-25T12:24:00.000Z",
+      "respondida": true,
+      "respuesta_ia": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "respuesta_publicada": "Gracias por su opinión, la tomamos muy en cuenta.",
+      "estado": "publicada",
+      "created_at": "2026-07-25T12:09:00.000Z"
+    },
+    {
+      "id": "r-38",
+      "tenant_id": "t-vital",
+      "review_id_google": "g-review-seed-38",
+      "rating": 5,
+      "texto": "Muy buena experiencia, el trato fue cálido y respetuoso en todo momento.",
+      "autor_nombre": "Jorge Ramírez",
+      "fecha_review": "2026-07-18T12:55:00.000Z",
+      "respondida": false,
+      "respuesta_ia": null,
+      "respuesta_publicada": null,
+      "estado": "nueva",
+      "created_at": "2026-07-18T12:45:00.000Z"
+    },
+    {
+      "id": "r-39",
+      "tenant_id": "t-sonrisa",
+      "review_id_google": "g-review-seed-39",
+      "rating": 2,
+      "texto": "Esperé casi una hora y nadie me avisó del retraso. Mala organización.",
+      "autor_nombre": "Laura Vázquez",
+      "fecha_review": "2026-08-06T12:40:00.000Z",
+      "respondida": false,
+      "respuesta_ia": null,
+      "respuesta_publicada": null,
+      "estado": "nueva",
+      "created_at": "2026-08-06T12:08:00.000Z"
+    }
+  ],
+  "competitors": [
+    {
+      "id": "c-t-sonrisa-1",
+      "tenant_id": "t-sonrisa",
+      "place_id": "place-comp-sonrisa-mx-1",
+      "nombre": "Clínica Cercana 1",
+      "rating": 4.6,
+      "total_reviews": 279,
+      "snapshot_fecha": "2026-08-21T15:36:25.746Z"
+    },
+    {
+      "id": "c-t-sonrisa-2",
+      "tenant_id": "t-sonrisa",
+      "place_id": "place-comp-sonrisa-mx-2",
+      "nombre": "Clínica Cercana 2",
+      "rating": 3.8,
+      "total_reviews": 213,
+      "snapshot_fecha": "2026-08-21T15:36:25.746Z"
+    },
+    {
+      "id": "c-t-sonrisa-3",
+      "tenant_id": "t-sonrisa",
+      "place_id": "place-comp-sonrisa-mx-3",
+      "nombre": "Clínica Cercana 3",
+      "rating": 3.8,
+      "total_reviews": 233,
+      "snapshot_fecha": "2026-08-21T15:36:25.746Z"
+    },
+    {
+      "id": "c-t-aura-1",
+      "tenant_id": "t-aura",
+      "place_id": "place-comp-estetica-aura-1",
+      "nombre": "Clínica Cercana 1",
+      "rating": 4.3,
+      "total_reviews": 136,
+      "snapshot_fecha": "2026-08-21T15:36:25.746Z"
+    },
+    {
+      "id": "c-t-aura-2",
+      "tenant_id": "t-aura",
+      "place_id": "place-comp-estetica-aura-2",
+      "nombre": "Clínica Cercana 2",
+      "rating": 4.9,
+      "total_reviews": 224,
+      "snapshot_fecha": "2026-08-21T15:36:25.746Z"
+    },
+    {
+      "id": "c-t-aura-3",
+      "tenant_id": "t-aura",
+      "place_id": "place-comp-estetica-aura-3",
+      "nombre": "Clínica Cercana 3",
+      "rating": 3.9,
+      "total_reviews": 306,
+      "snapshot_fecha": "2026-08-21T15:36:25.746Z"
+    },
+    {
+      "id": "c-t-vital-1",
+      "tenant_id": "t-vital",
+      "place_id": "place-comp-centro-vital-1",
+      "nombre": "Clínica Cercana 1",
+      "rating": 4.9,
+      "total_reviews": 160,
+      "snapshot_fecha": "2026-08-21T15:36:25.746Z"
+    },
+    {
+      "id": "c-t-vital-2",
+      "tenant_id": "t-vital",
+      "place_id": "place-comp-centro-vital-2",
+      "nombre": "Clínica Cercana 2",
+      "rating": 4.2,
+      "total_reviews": 103,
+      "snapshot_fecha": "2026-08-21T15:36:25.746Z"
+    },
+    {
+      "id": "c-t-vital-3",
+      "tenant_id": "t-vital",
+      "place_id": "place-comp-centro-vital-3",
+      "nombre": "Clínica Cercana 3",
+      "rating": 4.3,
+      "total_reviews": 310,
+      "snapshot_fecha": "2026-08-21T15:36:25.746Z"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "ct-0",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525556020301",
+      "nombre": "Jorge Romero",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-19T12:11:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-12-03",
+      "created_at": "2026-05-13T12:22:00.000Z"
+    },
+    {
+      "id": "ct-1",
+      "tenant_id": "t-aura",
+      "telefono": "+525587639041",
+      "nombre": "Sofía Luna",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-08-11T12:19:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-02-18",
+      "created_at": "2026-05-27T12:19:00.000Z"
+    },
+    {
+      "id": "ct-2",
+      "tenant_id": "t-vital",
+      "telefono": "+525552268334",
+      "nombre": "Carmen Sánchez",
+      "origen": "excel",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-01T12:56:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-04-23",
+      "created_at": "2025-09-03T12:40:00.000Z"
+    },
+    {
+      "id": "ct-3",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525528518431",
+      "nombre": "Miguel Sánchez",
+      "origen": "manual",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-07-16",
+      "created_at": "2026-07-10T12:31:00.000Z"
+    },
+    {
+      "id": "ct-4",
+      "tenant_id": "t-aura",
+      "telefono": "+525587154173",
+      "nombre": "Rosa Silva",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-27T12:45:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-10-25",
+      "created_at": "2026-06-29T12:44:00.000Z"
+    },
+    {
+      "id": "ct-5",
+      "tenant_id": "t-vital",
+      "telefono": "+525558711832",
+      "nombre": "Miguel Pérez",
+      "origen": "excel",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2025-09-05",
+      "created_at": "2026-02-27T12:23:00.000Z"
+    },
+    {
+      "id": "ct-6",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525525340067",
+      "nombre": "Ricardo Silva",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-11T12:33:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-04-04",
+      "created_at": "2025-08-02T12:56:00.000Z"
+    },
+    {
+      "id": "ct-7",
+      "tenant_id": "t-aura",
+      "telefono": "+525545350230",
+      "nombre": "María Paredes",
+      "origen": "excel",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-01-09",
+      "created_at": "2025-10-27T12:19:00.000Z"
+    },
+    {
+      "id": "ct-8",
+      "tenant_id": "t-vital",
+      "telefono": "+525538760077",
+      "nombre": "Jorge Sánchez",
+      "origen": "excel",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-26T12:06:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-08-25",
+      "created_at": "2026-02-13T12:43:00.000Z"
+    },
+    {
+      "id": "ct-9",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525546721381",
+      "nombre": "Valeria Silva",
+      "origen": "excel",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-08-05T12:12:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-01-17",
+      "created_at": "2026-07-01T12:32:00.000Z"
+    },
+    {
+      "id": "ct-10",
+      "tenant_id": "t-aura",
+      "telefono": "+525557170579",
+      "nombre": "Luis Sánchez",
+      "origen": "micropagina",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-07-16",
+      "created_at": "2025-07-21T12:08:00.000Z"
+    },
+    {
+      "id": "ct-11",
+      "tenant_id": "t-vital",
+      "telefono": "+525584778782",
+      "nombre": "Patricia Jiménez",
+      "origen": "excel",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-08-04T12:18:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-08-10",
+      "created_at": "2025-08-11T12:06:00.000Z"
+    },
+    {
+      "id": "ct-12",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525544625750",
+      "nombre": "Luis Silva",
+      "origen": "micropagina",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-08-09T12:43:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-03-10",
+      "created_at": "2025-09-23T12:40:00.000Z"
+    },
+    {
+      "id": "ct-13",
+      "tenant_id": "t-aura",
+      "telefono": "+525549808559",
+      "nombre": "Carlos Silva",
+      "origen": "manual",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-03-29",
+      "created_at": "2026-05-24T12:51:00.000Z"
+    },
+    {
+      "id": "ct-14",
+      "tenant_id": "t-vital",
+      "telefono": "+525531756102",
+      "nombre": "Miguel Silva",
+      "origen": "micropagina",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-23T12:19:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-01-17",
+      "created_at": "2026-02-20T12:44:00.000Z"
+    },
+    {
+      "id": "ct-15",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525539196743",
+      "nombre": "Héctor Pérez",
+      "origen": "micropagina",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-05-25T12:42:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-11-16",
+      "created_at": "2026-02-19T12:17:00.000Z"
+    },
+    {
+      "id": "ct-16",
+      "tenant_id": "t-aura",
+      "telefono": "+525560350695",
+      "nombre": "Héctor Vega",
+      "origen": "manual",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-02-18",
+      "created_at": "2026-04-26T12:13:00.000Z"
+    },
+    {
+      "id": "ct-17",
+      "tenant_id": "t-vital",
+      "telefono": "+525514865931",
+      "nombre": "Fernando Cruz",
+      "origen": "excel",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-04T12:18:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-01-01",
+      "created_at": "2026-01-20T12:48:00.000Z"
+    },
+    {
+      "id": "ct-18",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525585214263",
+      "nombre": "Héctor Silva",
+      "origen": "micropagina",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-03-18",
+      "created_at": "2026-05-31T12:50:00.000Z"
+    },
+    {
+      "id": "ct-19",
+      "tenant_id": "t-aura",
+      "telefono": "+525585601928",
+      "nombre": "Ricardo Pérez",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-05-31T12:17:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-05-30",
+      "created_at": "2026-01-09T12:34:00.000Z"
+    },
+    {
+      "id": "ct-20",
+      "tenant_id": "t-vital",
+      "telefono": "+525564672311",
+      "nombre": "Luis Quiroz",
+      "origen": "micropagina",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-08-08T12:59:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-01-14",
+      "created_at": "2025-12-06T12:44:00.000Z"
+    },
+    {
+      "id": "ct-21",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525556606058",
+      "nombre": "Miguel Jiménez",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-11T12:23:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-06-03",
+      "created_at": "2026-05-21T12:13:00.000Z"
+    },
+    {
+      "id": "ct-22",
+      "tenant_id": "t-aura",
+      "telefono": "+525569126370",
+      "nombre": "Lucía Vega",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-16T12:45:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-12-24",
+      "created_at": "2025-09-27T12:18:00.000Z"
+    },
+    {
+      "id": "ct-23",
+      "tenant_id": "t-vital",
+      "telefono": "+525540266176",
+      "nombre": "Jorge Paredes",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-04T12:09:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-01-09",
+      "created_at": "2026-07-19T12:06:00.000Z"
+    },
+    {
+      "id": "ct-24",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525594552981",
+      "nombre": "Miguel Pérez",
+      "origen": "excel",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2025-11-25",
+      "created_at": "2025-12-29T12:23:00.000Z"
+    },
+    {
+      "id": "ct-25",
+      "tenant_id": "t-aura",
+      "telefono": "+525523965045",
+      "nombre": "María Sánchez",
+      "origen": "excel",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-02T12:15:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-07-29",
+      "created_at": "2025-10-21T12:20:00.000Z"
+    },
+    {
+      "id": "ct-26",
+      "tenant_id": "t-vital",
+      "telefono": "+525516920515",
+      "nombre": "Ricardo Luna",
+      "origen": "manual",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-06-04",
+      "created_at": "2026-04-15T12:53:00.000Z"
+    },
+    {
+      "id": "ct-27",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525592935822",
+      "nombre": "Patricia Pérez",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-12T12:40:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-09-03",
+      "created_at": "2026-05-14T12:14:00.000Z"
+    },
+    {
+      "id": "ct-28",
+      "tenant_id": "t-aura",
+      "telefono": "+525596498808",
+      "nombre": "Laura Cruz",
+      "origen": "excel",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-11T12:02:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-03-05",
+      "created_at": "2025-08-03T12:17:00.000Z"
+    },
+    {
+      "id": "ct-29",
+      "tenant_id": "t-vital",
+      "telefono": "+525575816642",
+      "nombre": "Héctor Silva",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-01T12:21:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-07-23",
+      "created_at": "2026-02-13T12:20:00.000Z"
+    },
+    {
+      "id": "ct-30",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525588620186",
+      "nombre": "Ricardo Luna",
+      "origen": "micropagina",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2025-12-30",
+      "created_at": "2025-09-06T12:43:00.000Z"
+    },
+    {
+      "id": "ct-31",
+      "tenant_id": "t-aura",
+      "telefono": "+525580761273",
+      "nombre": "Patricia Vega",
+      "origen": "manual",
+      "opt_in_status": "baja",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-06-14",
+      "created_at": "2025-10-27T12:31:00.000Z"
+    },
+    {
+      "id": "ct-32",
+      "tenant_id": "t-vital",
+      "telefono": "+525532653911",
+      "nombre": "Miguel Luna",
+      "origen": "micropagina",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-12T12:24:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-04-20",
+      "created_at": "2026-01-21T12:52:00.000Z"
+    },
+    {
+      "id": "ct-33",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525577532136",
+      "nombre": "Carlos Cruz",
+      "origen": "micropagina",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-03T12:01:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-01-24",
+      "created_at": "2025-09-02T12:22:00.000Z"
+    },
+    {
+      "id": "ct-34",
+      "tenant_id": "t-aura",
+      "telefono": "+525571896827",
+      "nombre": "Ricardo Pérez",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-02T12:18:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-07-24",
+      "created_at": "2025-11-22T12:39:00.000Z"
+    },
+    {
+      "id": "ct-35",
+      "tenant_id": "t-vital",
+      "telefono": "+525589870187",
+      "nombre": "María Luna",
+      "origen": "cita",
+      "opt_in_status": "baja",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-06-28",
+      "created_at": "2026-04-25T12:03:00.000Z"
+    },
+    {
+      "id": "ct-36",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525573014996",
+      "nombre": "Héctor Romero",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-07T12:24:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-06-21",
+      "created_at": "2025-09-06T12:04:00.000Z"
+    },
+    {
+      "id": "ct-37",
+      "tenant_id": "t-aura",
+      "telefono": "+525521957857",
+      "nombre": "Valeria Silva",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-05T12:43:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-06-24",
+      "created_at": "2025-12-01T12:14:00.000Z"
+    },
+    {
+      "id": "ct-38",
+      "tenant_id": "t-vital",
+      "telefono": "+525544021001",
+      "nombre": "Carmen Pérez",
+      "origen": "excel",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-28T12:13:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-08-01",
+      "created_at": "2026-03-15T12:59:00.000Z"
+    },
+    {
+      "id": "ct-39",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525544883952",
+      "nombre": "Jorge Pérez",
+      "origen": "micropagina",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-08-03T12:56:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-08-17",
+      "created_at": "2026-02-02T12:21:00.000Z"
+    },
+    {
+      "id": "ct-40",
+      "tenant_id": "t-aura",
+      "telefono": "+525536714789",
+      "nombre": "Valeria Quiroz",
+      "origen": "micropagina",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-01-03",
+      "created_at": "2025-11-06T12:04:00.000Z"
+    },
+    {
+      "id": "ct-41",
+      "tenant_id": "t-vital",
+      "telefono": "+525587897941",
+      "nombre": "María Luna",
+      "origen": "cita",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-05-06",
+      "created_at": "2025-07-29T12:39:00.000Z"
+    },
+    {
+      "id": "ct-42",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525522570503",
+      "nombre": "Andrés Romero",
+      "origen": "manual",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2025-11-08",
+      "created_at": "2026-02-03T12:48:00.000Z"
+    },
+    {
+      "id": "ct-43",
+      "tenant_id": "t-aura",
+      "telefono": "+525533956815",
+      "nombre": "Lucía Vega",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-08-09T12:39:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-07-28",
+      "created_at": "2025-08-03T12:37:00.000Z"
+    },
+    {
+      "id": "ct-44",
+      "tenant_id": "t-vital",
+      "telefono": "+525578490867",
+      "nombre": "Valeria Sánchez",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-08-02T12:11:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-04-29",
+      "created_at": "2025-08-14T12:00:00.000Z"
+    },
+    {
+      "id": "ct-45",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525575455815",
+      "nombre": "Fernando Jiménez",
+      "origen": "micropagina",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-15T12:25:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-01-10",
+      "created_at": "2025-08-28T12:25:00.000Z"
+    },
+    {
+      "id": "ct-46",
+      "tenant_id": "t-aura",
+      "telefono": "+525525370013",
+      "nombre": "Gabriel Cruz",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-10T12:01:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-11-04",
+      "created_at": "2026-01-03T12:25:00.000Z"
+    },
+    {
+      "id": "ct-47",
+      "tenant_id": "t-vital",
+      "telefono": "+525552616317",
+      "nombre": "Andrés Quiroz",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-05-23T12:32:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-06-07",
+      "created_at": "2026-05-11T12:16:00.000Z"
+    },
+    {
+      "id": "ct-48",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525512789697",
+      "nombre": "José Vega",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-22T12:19:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-06-16",
+      "created_at": "2025-11-05T12:59:00.000Z"
+    },
+    {
+      "id": "ct-49",
+      "tenant_id": "t-aura",
+      "telefono": "+525532532933",
+      "nombre": "Lucía Jiménez",
+      "origen": "excel",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-08-10T12:29:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-06-28",
+      "created_at": "2025-07-24T12:32:00.000Z"
+    },
+    {
+      "id": "ct-50",
+      "tenant_id": "t-vital",
+      "telefono": "+525543882850",
+      "nombre": "Luis Luna",
+      "origen": "micropagina",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-01T12:25:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-11-10",
+      "created_at": "2025-08-03T12:40:00.000Z"
+    },
+    {
+      "id": "ct-51",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525518502522",
+      "nombre": "Elena Romero",
+      "origen": "micropagina",
+      "opt_in_status": "baja",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-01-24",
+      "created_at": "2025-08-29T12:14:00.000Z"
+    },
+    {
+      "id": "ct-52",
+      "tenant_id": "t-aura",
+      "telefono": "+525555538313",
+      "nombre": "Rosa Romero",
+      "origen": "excel",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-05-24T12:13:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-05-10",
+      "created_at": "2026-04-04T12:23:00.000Z"
+    },
+    {
+      "id": "ct-53",
+      "tenant_id": "t-vital",
+      "telefono": "+525576374662",
+      "nombre": "Valeria Sánchez",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-08-01T12:21:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-11-20",
+      "created_at": "2025-07-26T12:35:00.000Z"
+    },
+    {
+      "id": "ct-54",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525589657417",
+      "nombre": "José Quiroz",
+      "origen": "excel",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-06-17",
+      "created_at": "2025-09-30T12:28:00.000Z"
+    },
+    {
+      "id": "ct-55",
+      "tenant_id": "t-aura",
+      "telefono": "+525593263932",
+      "nombre": "Carlos Vega",
+      "origen": "manual",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-04-07",
+      "created_at": "2025-12-03T12:55:00.000Z"
+    },
+    {
+      "id": "ct-56",
+      "tenant_id": "t-vital",
+      "telefono": "+525547082089",
+      "nombre": "Laura Pérez",
+      "origen": "manual",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-03-11",
+      "created_at": "2025-08-31T12:28:00.000Z"
+    },
+    {
+      "id": "ct-57",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525538101693",
+      "nombre": "Andrés Luna",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-05-31T12:30:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-01-24",
+      "created_at": "2025-10-24T12:07:00.000Z"
+    },
+    {
+      "id": "ct-58",
+      "tenant_id": "t-aura",
+      "telefono": "+525568542051",
+      "nombre": "Miguel Romero",
+      "origen": "excel",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2025-09-11",
+      "created_at": "2026-06-16T12:20:00.000Z"
+    },
+    {
+      "id": "ct-59",
+      "tenant_id": "t-vital",
+      "telefono": "+525591895770",
+      "nombre": "Laura Quiroz",
+      "origen": "excel",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-24T12:56:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-10-28",
+      "created_at": "2026-03-01T12:35:00.000Z"
+    },
+    {
+      "id": "ct-60",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525524040628",
+      "nombre": "Ana Silva",
+      "origen": "micropagina",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-21T12:08:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-07-16",
+      "created_at": "2025-12-15T12:46:00.000Z"
+    },
+    {
+      "id": "ct-61",
+      "tenant_id": "t-aura",
+      "telefono": "+525577733572",
+      "nombre": "Lucía Vega",
+      "origen": "excel",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2025-12-30",
+      "created_at": "2026-04-12T12:01:00.000Z"
+    },
+    {
+      "id": "ct-62",
+      "tenant_id": "t-vital",
+      "telefono": "+525587329053",
+      "nombre": "Valeria Sánchez",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-05T12:27:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-12-12",
+      "created_at": "2025-11-02T12:54:00.000Z"
+    },
+    {
+      "id": "ct-63",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525599504000",
+      "nombre": "Ricardo Pérez",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-17T12:20:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-10-07",
+      "created_at": "2026-06-02T12:07:00.000Z"
+    },
+    {
+      "id": "ct-64",
+      "tenant_id": "t-aura",
+      "telefono": "+525553600797",
+      "nombre": "Ana Silva",
+      "origen": "cita",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-06-27",
+      "created_at": "2025-09-17T12:19:00.000Z"
+    },
+    {
+      "id": "ct-65",
+      "tenant_id": "t-vital",
+      "telefono": "+525525576421",
+      "nombre": "Fernando Quiroz",
+      "origen": "excel",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-18T12:58:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-10-28",
+      "created_at": "2025-09-24T12:38:00.000Z"
+    },
+    {
+      "id": "ct-66",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525536498549",
+      "nombre": "José Pérez",
+      "origen": "excel",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-08-04T12:15:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-08-03",
+      "created_at": "2026-02-14T12:49:00.000Z"
+    },
+    {
+      "id": "ct-67",
+      "tenant_id": "t-aura",
+      "telefono": "+525597283449",
+      "nombre": "Ana Cruz",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-24T12:07:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-03-18",
+      "created_at": "2026-02-21T12:11:00.000Z"
+    },
+    {
+      "id": "ct-68",
+      "tenant_id": "t-vital",
+      "telefono": "+525588341674",
+      "nombre": "María Jiménez",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-13T12:37:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-06-07",
+      "created_at": "2026-04-09T12:35:00.000Z"
+    },
+    {
+      "id": "ct-69",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525536866551",
+      "nombre": "Carmen Pérez",
+      "origen": "excel",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-08-02T12:18:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-08-05",
+      "created_at": "2025-10-05T12:49:00.000Z"
+    },
+    {
+      "id": "ct-70",
+      "tenant_id": "t-aura",
+      "telefono": "+525528815231",
+      "nombre": "José Silva",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-08T12:12:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-08-15",
+      "created_at": "2026-05-19T12:03:00.000Z"
+    },
+    {
+      "id": "ct-71",
+      "tenant_id": "t-vital",
+      "telefono": "+525562915536",
+      "nombre": "Patricia Silva",
+      "origen": "excel",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-15T12:06:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-08-05",
+      "created_at": "2026-03-13T12:51:00.000Z"
+    },
+    {
+      "id": "ct-72",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525526319230",
+      "nombre": "Laura Luna",
+      "origen": "cita",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2025-10-19",
+      "created_at": "2026-01-20T12:25:00.000Z"
+    },
+    {
+      "id": "ct-73",
+      "tenant_id": "t-aura",
+      "telefono": "+525573188357",
+      "nombre": "Laura Sánchez",
+      "origen": "manual",
+      "opt_in_status": "baja",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2025-11-30",
+      "created_at": "2025-08-29T12:50:00.000Z"
+    },
+    {
+      "id": "ct-74",
+      "tenant_id": "t-vital",
+      "telefono": "+525540414440",
+      "nombre": "Patricia Vega",
+      "origen": "excel",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-29T12:26:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-07-27",
+      "created_at": "2026-05-15T12:35:00.000Z"
+    },
+    {
+      "id": "ct-75",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525589911590",
+      "nombre": "Ricardo Jiménez",
+      "origen": "excel",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2025-10-02",
+      "created_at": "2026-06-25T12:16:00.000Z"
+    },
+    {
+      "id": "ct-76",
+      "tenant_id": "t-aura",
+      "telefono": "+525557544285",
+      "nombre": "Sofía Silva",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-05-24T12:29:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-07-19",
+      "created_at": "2025-10-30T12:17:00.000Z"
+    },
+    {
+      "id": "ct-77",
+      "tenant_id": "t-vital",
+      "telefono": "+525515494548",
+      "nombre": "Carlos Sánchez",
+      "origen": "manual",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-05-17",
+      "created_at": "2026-05-05T12:00:00.000Z"
+    },
+    {
+      "id": "ct-78",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525525714148",
+      "nombre": "Fernando Silva",
+      "origen": "excel",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-02T12:26:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-08-20",
+      "created_at": "2026-06-18T12:57:00.000Z"
+    },
+    {
+      "id": "ct-79",
+      "tenant_id": "t-aura",
+      "telefono": "+525553447793",
+      "nombre": "Gabriel Luna",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-16T12:21:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-04-09",
+      "created_at": "2025-08-02T12:51:00.000Z"
+    },
+    {
+      "id": "ct-80",
+      "tenant_id": "t-vital",
+      "telefono": "+525510105045",
+      "nombre": "Carlos Quiroz",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-10T12:03:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-08-09",
+      "created_at": "2026-03-06T12:18:00.000Z"
+    },
+    {
+      "id": "ct-81",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525544278431",
+      "nombre": "Valeria Paredes",
+      "origen": "manual",
+      "opt_in_status": "baja",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2025-11-30",
+      "created_at": "2025-10-15T12:55:00.000Z"
+    },
+    {
+      "id": "ct-82",
+      "tenant_id": "t-aura",
+      "telefono": "+525587595928",
+      "nombre": "Rosa Vega",
+      "origen": "excel",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-18T12:13:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-10-12",
+      "created_at": "2026-04-15T12:06:00.000Z"
+    },
+    {
+      "id": "ct-83",
+      "tenant_id": "t-vital",
+      "telefono": "+525523479292",
+      "nombre": "Patricia Paredes",
+      "origen": "micropagina",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-04-15",
+      "created_at": "2025-09-09T12:28:00.000Z"
+    },
+    {
+      "id": "ct-84",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525572421223",
+      "nombre": "José Cruz",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-05-31T12:25:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-06-30",
+      "created_at": "2026-04-30T12:11:00.000Z"
+    },
+    {
+      "id": "ct-85",
+      "tenant_id": "t-aura",
+      "telefono": "+525562534883",
+      "nombre": "Miguel Paredes",
+      "origen": "excel",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-01-29",
+      "created_at": "2026-01-24T12:57:00.000Z"
+    },
+    {
+      "id": "ct-86",
+      "tenant_id": "t-vital",
+      "telefono": "+525581375153",
+      "nombre": "Ana Luna",
+      "origen": "excel",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-05-01",
+      "created_at": "2025-09-02T12:50:00.000Z"
+    },
+    {
+      "id": "ct-87",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525544455611",
+      "nombre": "Valeria Sánchez",
+      "origen": "micropagina",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-03T12:17:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-12-10",
+      "created_at": "2025-08-09T12:38:00.000Z"
+    },
+    {
+      "id": "ct-88",
+      "tenant_id": "t-aura",
+      "telefono": "+525563072583",
+      "nombre": "Laura Vega",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-03T12:20:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-06-22",
+      "created_at": "2026-04-05T12:24:00.000Z"
+    },
+    {
+      "id": "ct-89",
+      "tenant_id": "t-vital",
+      "telefono": "+525566286539",
+      "nombre": "Luis Cruz",
+      "origen": "excel",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-08T12:37:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-06-23",
+      "created_at": "2026-03-27T12:04:00.000Z"
+    },
+    {
+      "id": "ct-90",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525565406551",
+      "nombre": "Valeria Jiménez",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-05-30T12:22:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-04-18",
+      "created_at": "2026-06-25T12:31:00.000Z"
+    },
+    {
+      "id": "ct-91",
+      "tenant_id": "t-aura",
+      "telefono": "+525580559642",
+      "nombre": "María Pérez",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-20T12:37:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-03-21",
+      "created_at": "2025-11-25T12:46:00.000Z"
+    },
+    {
+      "id": "ct-92",
+      "tenant_id": "t-vital",
+      "telefono": "+525566673687",
+      "nombre": "Patricia Quiroz",
+      "origen": "excel",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-01T12:21:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-04-05",
+      "created_at": "2025-08-07T12:14:00.000Z"
+    },
+    {
+      "id": "ct-93",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525516733140",
+      "nombre": "Rosa Cruz",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-08-05T12:16:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-02-03",
+      "created_at": "2025-09-19T12:42:00.000Z"
+    },
+    {
+      "id": "ct-94",
+      "tenant_id": "t-aura",
+      "telefono": "+525522059212",
+      "nombre": "Rosa Paredes",
+      "origen": "manual",
+      "opt_in_status": "baja",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-06-23",
+      "created_at": "2025-08-25T12:01:00.000Z"
+    },
+    {
+      "id": "ct-95",
+      "tenant_id": "t-vital",
+      "telefono": "+525568236276",
+      "nombre": "Valeria Cruz",
+      "origen": "micropagina",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-06T12:18:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-07-28",
+      "created_at": "2025-07-29T12:18:00.000Z"
+    },
+    {
+      "id": "ct-96",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525518758942",
+      "nombre": "Gabriel Romero",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-05-23T12:04:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-03-19",
+      "created_at": "2026-06-18T12:01:00.000Z"
+    },
+    {
+      "id": "ct-97",
+      "tenant_id": "t-aura",
+      "telefono": "+525540102948",
+      "nombre": "Rosa Romero",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-12T12:01:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-02-01",
+      "created_at": "2026-04-10T12:39:00.000Z"
+    },
+    {
+      "id": "ct-98",
+      "tenant_id": "t-vital",
+      "telefono": "+525584951484",
+      "nombre": "Ricardo Luna",
+      "origen": "excel",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-08-06T12:25:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-11-10",
+      "created_at": "2026-04-05T12:09:00.000Z"
+    },
+    {
+      "id": "ct-99",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525529275918",
+      "nombre": "José Quiroz",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-06T12:51:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-04-20",
+      "created_at": "2026-03-31T12:21:00.000Z"
+    },
+    {
+      "id": "ct-100",
+      "tenant_id": "t-aura",
+      "telefono": "+525599449848",
+      "nombre": "Gabriel Quiroz",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-08-06T12:58:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-12-27",
+      "created_at": "2025-10-03T12:09:00.000Z"
+    },
+    {
+      "id": "ct-101",
+      "tenant_id": "t-vital",
+      "telefono": "+525545839179",
+      "nombre": "Carmen Romero",
+      "origen": "micropagina",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2025-09-17",
+      "created_at": "2025-08-25T12:46:00.000Z"
+    },
+    {
+      "id": "ct-102",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525520823790",
+      "nombre": "Patricia Sánchez",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-15T12:37:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-05-13",
+      "created_at": "2026-02-13T12:21:00.000Z"
+    },
+    {
+      "id": "ct-103",
+      "tenant_id": "t-aura",
+      "telefono": "+525566439968",
+      "nombre": "Rosa Jiménez",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-05T12:36:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-08-12",
+      "created_at": "2026-07-21T12:34:00.000Z"
+    },
+    {
+      "id": "ct-104",
+      "tenant_id": "t-vital",
+      "telefono": "+525569322470",
+      "nombre": "Ricardo Luna",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-02T12:26:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-05-22",
+      "created_at": "2025-09-17T12:04:00.000Z"
+    },
+    {
+      "id": "ct-105",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525512691189",
+      "nombre": "María Vega",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-18T12:40:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-11-29",
+      "created_at": "2025-09-18T12:58:00.000Z"
+    },
+    {
+      "id": "ct-106",
+      "tenant_id": "t-aura",
+      "telefono": "+525558110158",
+      "nombre": "Jorge Quiroz",
+      "origen": "cita",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-06-05",
+      "created_at": "2026-06-15T12:24:00.000Z"
+    },
+    {
+      "id": "ct-107",
+      "tenant_id": "t-vital",
+      "telefono": "+525529601187",
+      "nombre": "Carmen Pérez",
+      "origen": "micropagina",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-24T12:38:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-08-30",
+      "created_at": "2026-04-02T12:37:00.000Z"
+    },
+    {
+      "id": "ct-108",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525584578490",
+      "nombre": "Laura Romero",
+      "origen": "excel",
+      "opt_in_status": "baja",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2025-09-02",
+      "created_at": "2025-11-01T12:27:00.000Z"
+    },
+    {
+      "id": "ct-109",
+      "tenant_id": "t-aura",
+      "telefono": "+525551174133",
+      "nombre": "María Sánchez",
+      "origen": "excel",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-27T12:02:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-08-02",
+      "created_at": "2026-05-19T12:26:00.000Z"
+    },
+    {
+      "id": "ct-110",
+      "tenant_id": "t-vital",
+      "telefono": "+525583243758",
+      "nombre": "Patricia Romero",
+      "origen": "micropagina",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-05-02",
+      "created_at": "2026-07-19T12:40:00.000Z"
+    },
+    {
+      "id": "ct-111",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525556941610",
+      "nombre": "Ricardo Jiménez",
+      "origen": "micropagina",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-01-15",
+      "created_at": "2025-12-21T12:55:00.000Z"
+    },
+    {
+      "id": "ct-112",
+      "tenant_id": "t-aura",
+      "telefono": "+525530772514",
+      "nombre": "Elena Jiménez",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-08-05T12:06:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-12-23",
+      "created_at": "2026-05-01T12:50:00.000Z"
+    },
+    {
+      "id": "ct-113",
+      "tenant_id": "t-vital",
+      "telefono": "+525571743236",
+      "nombre": "Fernando Silva",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-05-26T12:28:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-07-28",
+      "created_at": "2026-01-04T12:14:00.000Z"
+    },
+    {
+      "id": "ct-114",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525519255745",
+      "nombre": "Héctor Sánchez",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-12T12:54:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-08-19",
+      "created_at": "2026-04-20T12:28:00.000Z"
+    },
+    {
+      "id": "ct-115",
+      "tenant_id": "t-aura",
+      "telefono": "+525538454051",
+      "nombre": "Héctor Vega",
+      "origen": "micropagina",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-31T12:27:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-02-14",
+      "created_at": "2026-01-30T12:18:00.000Z"
+    },
+    {
+      "id": "ct-116",
+      "tenant_id": "t-vital",
+      "telefono": "+525550562248",
+      "nombre": "José Cruz",
+      "origen": "micropagina",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-17T12:05:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-10-29",
+      "created_at": "2025-12-03T12:43:00.000Z"
+    },
+    {
+      "id": "ct-117",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525525650485",
+      "nombre": "Luis Cruz",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-03T12:12:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-05-21",
+      "created_at": "2026-04-23T12:10:00.000Z"
+    },
+    {
+      "id": "ct-118",
+      "tenant_id": "t-aura",
+      "telefono": "+525560980718",
+      "nombre": "Lucía Vega",
+      "origen": "excel",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-15T12:19:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-11-22",
+      "created_at": "2026-01-26T12:39:00.000Z"
+    },
+    {
+      "id": "ct-119",
+      "tenant_id": "t-vital",
+      "telefono": "+525559658664",
+      "nombre": "Elena Vega",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-08-02T12:47:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-04-14",
+      "created_at": "2026-01-04T12:20:00.000Z"
+    },
+    {
+      "id": "ct-120",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525577335157",
+      "nombre": "Jorge Quiroz",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-01T12:39:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-08-02",
+      "created_at": "2026-01-24T12:43:00.000Z"
+    },
+    {
+      "id": "ct-121",
+      "tenant_id": "t-aura",
+      "telefono": "+525554519293",
+      "nombre": "Carlos Jiménez",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-27T12:51:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-01-30",
+      "created_at": "2025-07-30T12:27:00.000Z"
+    },
+    {
+      "id": "ct-122",
+      "tenant_id": "t-vital",
+      "telefono": "+525530739409",
+      "nombre": "Miguel Luna",
+      "origen": "micropagina",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-04-27",
+      "created_at": "2025-11-30T12:22:00.000Z"
+    },
+    {
+      "id": "ct-123",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525513784998",
+      "nombre": "Fernando Paredes",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-22T12:39:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-03-20",
+      "created_at": "2026-03-07T12:25:00.000Z"
+    },
+    {
+      "id": "ct-124",
+      "tenant_id": "t-aura",
+      "telefono": "+525599967987",
+      "nombre": "Héctor Paredes",
+      "origen": "cita",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-01-28",
+      "created_at": "2026-01-06T12:43:00.000Z"
+    },
+    {
+      "id": "ct-125",
+      "tenant_id": "t-vital",
+      "telefono": "+525596086535",
+      "nombre": "Lucía Quiroz",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-26T12:06:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-06-09",
+      "created_at": "2025-09-22T12:50:00.000Z"
+    },
+    {
+      "id": "ct-126",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525582081806",
+      "nombre": "Sofía Vega",
+      "origen": "manual",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-03-14",
+      "created_at": "2025-11-18T12:50:00.000Z"
+    },
+    {
+      "id": "ct-127",
+      "tenant_id": "t-aura",
+      "telefono": "+525530352365",
+      "nombre": "José Vega",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-08-08T12:25:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-06-21",
+      "created_at": "2026-06-21T12:00:00.000Z"
+    },
+    {
+      "id": "ct-128",
+      "tenant_id": "t-vital",
+      "telefono": "+525577823429",
+      "nombre": "José Luna",
+      "origen": "micropagina",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-27T12:13:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-05-12",
+      "created_at": "2026-06-26T12:29:00.000Z"
+    },
+    {
+      "id": "ct-129",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525548124615",
+      "nombre": "Fernando Sánchez",
+      "origen": "excel",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-08-04T12:49:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-06-20",
+      "created_at": "2025-11-12T12:01:00.000Z"
+    },
+    {
+      "id": "ct-130",
+      "tenant_id": "t-aura",
+      "telefono": "+525557370366",
+      "nombre": "Andrés Luna",
+      "origen": "excel",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-26T12:49:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-04-19",
+      "created_at": "2026-05-07T12:36:00.000Z"
+    },
+    {
+      "id": "ct-131",
+      "tenant_id": "t-vital",
+      "telefono": "+525521405546",
+      "nombre": "Héctor Romero",
+      "origen": "micropagina",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-09T12:50:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-01-20",
+      "created_at": "2026-06-14T12:04:00.000Z"
+    },
+    {
+      "id": "ct-132",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525552988959",
+      "nombre": "Ricardo Romero",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-03T12:56:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-06-16",
+      "created_at": "2026-04-05T12:30:00.000Z"
+    },
+    {
+      "id": "ct-133",
+      "tenant_id": "t-aura",
+      "telefono": "+525513190031",
+      "nombre": "Valeria Luna",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-08-07T12:19:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-12-13",
+      "created_at": "2025-10-04T12:08:00.000Z"
+    },
+    {
+      "id": "ct-134",
+      "tenant_id": "t-vital",
+      "telefono": "+525532755685",
+      "nombre": "José Vega",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-25T12:40:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-01-06",
+      "created_at": "2026-05-29T12:46:00.000Z"
+    },
+    {
+      "id": "ct-135",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525557736921",
+      "nombre": "Miguel Romero",
+      "origen": "excel",
+      "opt_in_status": "baja",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-06-14",
+      "created_at": "2025-10-13T12:54:00.000Z"
+    },
+    {
+      "id": "ct-136",
+      "tenant_id": "t-aura",
+      "telefono": "+525539930842",
+      "nombre": "Carlos Jiménez",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-04T12:25:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-05-24",
+      "created_at": "2025-12-05T12:45:00.000Z"
+    },
+    {
+      "id": "ct-137",
+      "tenant_id": "t-vital",
+      "telefono": "+525523172164",
+      "nombre": "Fernando Luna",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-14T12:20:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-06-03",
+      "created_at": "2025-11-15T12:44:00.000Z"
+    },
+    {
+      "id": "ct-138",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525529956501",
+      "nombre": "Gabriel Vega",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-15T12:10:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-09-17",
+      "created_at": "2025-10-04T12:31:00.000Z"
+    },
+    {
+      "id": "ct-139",
+      "tenant_id": "t-aura",
+      "telefono": "+525529608202",
+      "nombre": "Ricardo Cruz",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-05-30T12:20:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-02-25",
+      "created_at": "2026-04-08T12:06:00.000Z"
+    },
+    {
+      "id": "ct-140",
+      "tenant_id": "t-vital",
+      "telefono": "+525527449016",
+      "nombre": "Miguel Luna",
+      "origen": "excel",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-05-24",
+      "created_at": "2026-04-10T12:19:00.000Z"
+    },
+    {
+      "id": "ct-141",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525581534334",
+      "nombre": "Gabriel Quiroz",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-07T12:16:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-02-05",
+      "created_at": "2025-08-19T12:12:00.000Z"
+    },
+    {
+      "id": "ct-142",
+      "tenant_id": "t-aura",
+      "telefono": "+525559955665",
+      "nombre": "Ana Sánchez",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-08-05T12:50:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-09-04",
+      "created_at": "2025-08-19T12:10:00.000Z"
+    },
+    {
+      "id": "ct-143",
+      "tenant_id": "t-vital",
+      "telefono": "+525552583118",
+      "nombre": "Elena Jiménez",
+      "origen": "excel",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-02T12:51:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-01-01",
+      "created_at": "2025-10-24T12:21:00.000Z"
+    },
+    {
+      "id": "ct-144",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525592962901",
+      "nombre": "Miguel Paredes",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-26T12:22:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-05-24",
+      "created_at": "2025-08-31T12:48:00.000Z"
+    },
+    {
+      "id": "ct-145",
+      "tenant_id": "t-aura",
+      "telefono": "+525563861763",
+      "nombre": "Fernando Cruz",
+      "origen": "micropagina",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-08-09T12:52:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-03-04",
+      "created_at": "2025-09-26T12:53:00.000Z"
+    },
+    {
+      "id": "ct-146",
+      "tenant_id": "t-vital",
+      "telefono": "+525511770964",
+      "nombre": "Lucía Silva",
+      "origen": "micropagina",
+      "opt_in_status": "baja",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-01-20",
+      "created_at": "2026-04-05T12:10:00.000Z"
+    },
+    {
+      "id": "ct-147",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525518692833",
+      "nombre": "Fernando Romero",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-12T12:31:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-09-26",
+      "created_at": "2025-12-31T12:55:00.000Z"
+    },
+    {
+      "id": "ct-148",
+      "tenant_id": "t-aura",
+      "telefono": "+525530134004",
+      "nombre": "Héctor Romero",
+      "origen": "micropagina",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-02-16",
+      "created_at": "2026-01-23T12:17:00.000Z"
+    },
+    {
+      "id": "ct-149",
+      "tenant_id": "t-vital",
+      "telefono": "+525510302104",
+      "nombre": "Patricia Jiménez",
+      "origen": "micropagina",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2025-08-14",
+      "created_at": "2026-02-07T12:24:00.000Z"
+    },
+    {
+      "id": "ct-150",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525577772950",
+      "nombre": "Elena Luna",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-08-02T12:49:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-08-14",
+      "created_at": "2025-08-01T12:36:00.000Z"
+    },
+    {
+      "id": "ct-151",
+      "tenant_id": "t-aura",
+      "telefono": "+525536095316",
+      "nombre": "Ana Sánchez",
+      "origen": "cita",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2025-10-03",
+      "created_at": "2025-10-22T12:02:00.000Z"
+    },
+    {
+      "id": "ct-152",
+      "tenant_id": "t-vital",
+      "telefono": "+525527200663",
+      "nombre": "Elena Silva",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-05-26T12:39:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-09-11",
+      "created_at": "2026-06-29T12:36:00.000Z"
+    },
+    {
+      "id": "ct-153",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525553055770",
+      "nombre": "Elena Sánchez",
+      "origen": "manual",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-04-15",
+      "created_at": "2025-10-31T12:38:00.000Z"
+    },
+    {
+      "id": "ct-154",
+      "tenant_id": "t-aura",
+      "telefono": "+525579904816",
+      "nombre": "Carmen Paredes",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-08-03T12:09:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-06-02",
+      "created_at": "2025-08-14T12:37:00.000Z"
+    },
+    {
+      "id": "ct-155",
+      "tenant_id": "t-vital",
+      "telefono": "+525516319445",
+      "nombre": "Carmen Quiroz",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-18T12:33:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-10-10",
+      "created_at": "2025-09-22T12:38:00.000Z"
+    },
+    {
+      "id": "ct-156",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525528919932",
+      "nombre": "Rosa Quiroz",
+      "origen": "manual",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-03-01",
+      "created_at": "2026-07-07T12:36:00.000Z"
+    },
+    {
+      "id": "ct-157",
+      "tenant_id": "t-aura",
+      "telefono": "+525532741639",
+      "nombre": "Andrés Luna",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-27T12:20:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-03-11",
+      "created_at": "2025-08-31T12:10:00.000Z"
+    },
+    {
+      "id": "ct-158",
+      "tenant_id": "t-vital",
+      "telefono": "+525519752894",
+      "nombre": "María Cruz",
+      "origen": "excel",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-02T12:49:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-03-08",
+      "created_at": "2026-04-05T12:37:00.000Z"
+    },
+    {
+      "id": "ct-159",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525555475250",
+      "nombre": "Laura Sánchez",
+      "origen": "micropagina",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-27T12:01:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-01-11",
+      "created_at": "2025-11-24T12:15:00.000Z"
+    },
+    {
+      "id": "ct-160",
+      "tenant_id": "t-aura",
+      "telefono": "+525549191590",
+      "nombre": "Miguel Sánchez",
+      "origen": "excel",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-08-10T12:15:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-08-16",
+      "created_at": "2026-02-07T12:38:00.000Z"
+    },
+    {
+      "id": "ct-161",
+      "tenant_id": "t-vital",
+      "telefono": "+525518715754",
+      "nombre": "Laura Jiménez",
+      "origen": "manual",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2025-10-08",
+      "created_at": "2026-04-02T12:03:00.000Z"
+    },
+    {
+      "id": "ct-162",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525510631754",
+      "nombre": "María Vega",
+      "origen": "manual",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2025-07-20",
+      "created_at": "2025-08-16T12:39:00.000Z"
+    },
+    {
+      "id": "ct-163",
+      "tenant_id": "t-aura",
+      "telefono": "+525518179890",
+      "nombre": "Elena Paredes",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-05T12:46:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-08-30",
+      "created_at": "2026-05-03T12:42:00.000Z"
+    },
+    {
+      "id": "ct-164",
+      "tenant_id": "t-vital",
+      "telefono": "+525535096408",
+      "nombre": "Ana Vega",
+      "origen": "micropagina",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-30T12:15:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-12-12",
+      "created_at": "2026-04-10T12:44:00.000Z"
+    },
+    {
+      "id": "ct-165",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525527801875",
+      "nombre": "Sofía Silva",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-03T12:30:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-06-04",
+      "created_at": "2026-05-03T12:16:00.000Z"
+    },
+    {
+      "id": "ct-166",
+      "tenant_id": "t-aura",
+      "telefono": "+525547689829",
+      "nombre": "Rosa Silva",
+      "origen": "micropagina",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-02-06",
+      "created_at": "2026-04-26T12:32:00.000Z"
+    },
+    {
+      "id": "ct-167",
+      "tenant_id": "t-vital",
+      "telefono": "+525527005992",
+      "nombre": "Patricia Luna",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-05-29T12:27:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-07-30",
+      "created_at": "2025-09-23T12:36:00.000Z"
+    },
+    {
+      "id": "ct-168",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525537049239",
+      "nombre": "Luis Quiroz",
+      "origen": "excel",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-02-06",
+      "created_at": "2026-06-22T12:38:00.000Z"
+    },
+    {
+      "id": "ct-169",
+      "tenant_id": "t-aura",
+      "telefono": "+525525524845",
+      "nombre": "Lucía Jiménez",
+      "origen": "excel",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-02-02",
+      "created_at": "2026-04-12T12:18:00.000Z"
+    },
+    {
+      "id": "ct-170",
+      "tenant_id": "t-vital",
+      "telefono": "+525585897739",
+      "nombre": "Gabriel Cruz",
+      "origen": "manual",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-01-11",
+      "created_at": "2025-09-10T12:37:00.000Z"
+    },
+    {
+      "id": "ct-171",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525521916208",
+      "nombre": "Sofía Luna",
+      "origen": "cita",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2025-10-30",
+      "created_at": "2025-09-03T12:45:00.000Z"
+    },
+    {
+      "id": "ct-172",
+      "tenant_id": "t-aura",
+      "telefono": "+525552555268",
+      "nombre": "Jorge Paredes",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-08-09T12:49:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-01-28",
+      "created_at": "2025-09-02T12:03:00.000Z"
+    },
+    {
+      "id": "ct-173",
+      "tenant_id": "t-vital",
+      "telefono": "+525581906765",
+      "nombre": "Carmen Sánchez",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-18T12:21:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-02-14",
+      "created_at": "2025-08-14T12:09:00.000Z"
+    },
+    {
+      "id": "ct-174",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525573127221",
+      "nombre": "Gabriel Luna",
+      "origen": "excel",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-29T12:44:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-02-07",
+      "created_at": "2026-01-18T12:06:00.000Z"
+    },
+    {
+      "id": "ct-175",
+      "tenant_id": "t-aura",
+      "telefono": "+525514204548",
+      "nombre": "Valeria Luna",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-08-05T12:49:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-07-09",
+      "created_at": "2025-09-10T12:07:00.000Z"
+    },
+    {
+      "id": "ct-176",
+      "tenant_id": "t-vital",
+      "telefono": "+525562828635",
+      "nombre": "Ana Silva",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-07T12:31:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-09-02",
+      "created_at": "2026-07-14T12:15:00.000Z"
+    },
+    {
+      "id": "ct-177",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525521056431",
+      "nombre": "María Luna",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-03T12:14:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-07-20",
+      "created_at": "2026-01-10T12:08:00.000Z"
+    },
+    {
+      "id": "ct-178",
+      "tenant_id": "t-aura",
+      "telefono": "+525522061771",
+      "nombre": "Luis Vega",
+      "origen": "excel",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2025-11-16",
+      "created_at": "2026-05-12T12:04:00.000Z"
+    },
+    {
+      "id": "ct-179",
+      "tenant_id": "t-vital",
+      "telefono": "+525536866734",
+      "nombre": "Andrés Pérez",
+      "origen": "micropagina",
+      "opt_in_status": "baja",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2025-09-27",
+      "created_at": "2025-09-15T12:16:00.000Z"
+    },
+    {
+      "id": "ct-180",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525541870919",
+      "nombre": "Sofía Pérez",
+      "origen": "excel",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-10T12:58:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-01-01",
+      "created_at": "2025-12-31T12:49:00.000Z"
+    },
+    {
+      "id": "ct-181",
+      "tenant_id": "t-aura",
+      "telefono": "+525565021361",
+      "nombre": "Ana Pérez",
+      "origen": "excel",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-02-07",
+      "created_at": "2026-04-30T12:32:00.000Z"
+    },
+    {
+      "id": "ct-182",
+      "tenant_id": "t-vital",
+      "telefono": "+525588753530",
+      "nombre": "José Cruz",
+      "origen": "micropagina",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2025-11-29",
+      "created_at": "2026-03-11T12:43:00.000Z"
+    },
+    {
+      "id": "ct-183",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525574602987",
+      "nombre": "José Quiroz",
+      "origen": "micropagina",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2025-11-06",
+      "created_at": "2026-07-19T12:25:00.000Z"
+    },
+    {
+      "id": "ct-184",
+      "tenant_id": "t-aura",
+      "telefono": "+525572848934",
+      "nombre": "Sofía Cruz",
+      "origen": "excel",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-14T12:54:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-09-20",
+      "created_at": "2026-05-17T12:14:00.000Z"
+    },
+    {
+      "id": "ct-185",
+      "tenant_id": "t-vital",
+      "telefono": "+525510107754",
+      "nombre": "Gabriel Jiménez",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-21T12:35:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-08-16",
+      "created_at": "2026-04-12T12:17:00.000Z"
+    },
+    {
+      "id": "ct-186",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525577082026",
+      "nombre": "Andrés Paredes",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-08-05T12:23:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-08-13",
+      "created_at": "2025-09-13T12:19:00.000Z"
+    },
+    {
+      "id": "ct-187",
+      "tenant_id": "t-aura",
+      "telefono": "+525598872092",
+      "nombre": "Elena Cruz",
+      "origen": "excel",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-08-07T12:45:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-07-08",
+      "created_at": "2026-05-28T12:07:00.000Z"
+    },
+    {
+      "id": "ct-188",
+      "tenant_id": "t-vital",
+      "telefono": "+525570526740",
+      "nombre": "Elena Paredes",
+      "origen": "cita",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-16T12:47:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-05-30",
+      "created_at": "2025-09-28T12:54:00.000Z"
+    },
+    {
+      "id": "ct-189",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525531409969",
+      "nombre": "Elena Romero",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-22T12:22:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-09-05",
+      "created_at": "2026-06-13T12:06:00.000Z"
+    },
+    {
+      "id": "ct-190",
+      "tenant_id": "t-aura",
+      "telefono": "+525577301469",
+      "nombre": "Rosa Luna",
+      "origen": "manual",
+      "opt_in_status": "baja",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-07-18",
+      "created_at": "2025-12-13T12:18:00.000Z"
+    },
+    {
+      "id": "ct-191",
+      "tenant_id": "t-vital",
+      "telefono": "+525541679990",
+      "nombre": "Lucía Luna",
+      "origen": "cita",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2025-08-17",
+      "created_at": "2025-10-23T12:15:00.000Z"
+    },
+    {
+      "id": "ct-192",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525543513631",
+      "nombre": "Ana Paredes",
+      "origen": "excel",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-04-12",
+      "created_at": "2026-02-01T12:13:00.000Z"
+    },
+    {
+      "id": "ct-193",
+      "tenant_id": "t-aura",
+      "telefono": "+525558610150",
+      "nombre": "José Pérez",
+      "origen": "excel",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2026-06-19",
+      "created_at": "2025-12-28T12:29:00.000Z"
+    },
+    {
+      "id": "ct-194",
+      "tenant_id": "t-vital",
+      "telefono": "+525512035763",
+      "nombre": "Fernando Sánchez",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-08-11T12:28:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-06-05",
+      "created_at": "2026-05-12T12:11:00.000Z"
+    },
+    {
+      "id": "ct-195",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525598158061",
+      "nombre": "Andrés Pérez",
+      "origen": "cita",
+      "opt_in_status": "pendiente",
+      "opt_in_evidencia": null,
+      "ultima_visita": "2025-10-09",
+      "created_at": "2026-03-16T12:18:00.000Z"
+    },
+    {
+      "id": "ct-196",
+      "tenant_id": "t-aura",
+      "telefono": "+525577501313",
+      "nombre": "Carmen Quiroz",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-19T12:53:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-06-25",
+      "created_at": "2025-11-21T12:40:00.000Z"
+    },
+    {
+      "id": "ct-197",
+      "tenant_id": "t-vital",
+      "telefono": "+525519065085",
+      "nombre": "Héctor Vega",
+      "origen": "excel",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-30T12:23:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-04-22",
+      "created_at": "2026-01-17T12:48:00.000Z"
+    },
+    {
+      "id": "ct-198",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525585948747",
+      "nombre": "Fernando Paredes",
+      "origen": "manual",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-06-08T12:24:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2026-05-01",
+      "created_at": "2026-07-17T12:52:00.000Z"
+    },
+    {
+      "id": "ct-199",
+      "tenant_id": "t-aura",
+      "telefono": "+525585026914",
+      "nombre": "Luis Sánchez",
+      "origen": "micropagina",
+      "opt_in_status": "activo",
+      "opt_in_evidencia": {
+        "fecha": "2026-07-22T12:45:00.000Z",
+        "canal": "whatsapp",
+        "mensaje": "reactivacion_optin",
+        "respuesta": "Sí, me interesa"
+      },
+      "ultima_visita": "2025-10-05",
+      "created_at": "2026-03-22T12:32:00.000Z"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "ap-0",
+      "tenant_id": "t-sonrisa",
+      "contact_id": "ct-0",
+      "fecha_hora": "2026-08-23T15:26:00.000Z",
+      "nota": "Valoración",
+      "estado": "confirmada",
+      "review_solicitada": true,
+      "created_at": "2026-06-29T12:55:00.000Z"
+    },
+    {
+      "id": "ap-1",
+      "tenant_id": "t-aura",
+      "contact_id": "ct-4",
+      "fecha_hora": "2026-07-23T16:48:00.000Z",
+      "nota": "Seguimiento",
+      "estado": "confirmada",
+      "review_solicitada": false,
+      "created_at": "2026-07-12T12:54:00.000Z"
+    },
+    {
+      "id": "ap-2",
+      "tenant_id": "t-vital",
+      "contact_id": "ct-8",
+      "fecha_hora": "2026-08-04T17:20:00.000Z",
+      "nota": "Revisión general",
+      "estado": "cancelada",
+      "review_solicitada": false,
+      "created_at": "2026-06-22T12:43:00.000Z"
+    },
+    {
+      "id": "ap-3",
+      "tenant_id": "t-sonrisa",
+      "contact_id": "ct-9",
+      "fecha_hora": "2026-08-19T18:44:00.000Z",
+      "nota": "Primera visita",
+      "estado": "no_asistio",
+      "review_solicitada": true,
+      "created_at": "2026-07-18T12:05:00.000Z"
+    },
+    {
+      "id": "ap-4",
+      "tenant_id": "t-aura",
+      "contact_id": "ct-13",
+      "fecha_hora": "2026-08-22T12:55:00.000Z",
+      "nota": "Revisión general",
+      "estado": "confirmada",
+      "review_solicitada": false,
+      "created_at": "2026-07-12T12:04:00.000Z"
+    },
+    {
+      "id": "ap-5",
+      "tenant_id": "t-vital",
+      "contact_id": "ct-17",
+      "fecha_hora": "2026-08-14T12:09:00.000Z",
+      "nota": "Revisión general",
+      "estado": "no_asistio",
+      "review_solicitada": false,
+      "created_at": "2026-06-27T12:39:00.000Z"
+    },
+    {
+      "id": "ap-6",
+      "tenant_id": "t-sonrisa",
+      "contact_id": "ct-18",
+      "fecha_hora": "2026-08-20T13:33:00.000Z",
+      "nota": "Limpieza",
+      "estado": "cancelada",
+      "review_solicitada": false,
+      "created_at": "2026-06-22T12:02:00.000Z"
+    },
+    {
+      "id": "ap-7",
+      "tenant_id": "t-aura",
+      "contact_id": "ct-22",
+      "fecha_hora": "2026-08-03T09:24:00.000Z",
+      "nota": "Primera visita",
+      "estado": "asistio",
+      "review_solicitada": true,
+      "created_at": "2026-06-26T12:15:00.000Z"
+    },
+    {
+      "id": "ap-8",
+      "tenant_id": "t-vital",
+      "contact_id": "ct-26",
+      "fecha_hora": "2026-08-23T16:45:00.000Z",
+      "nota": "Seguimiento",
+      "estado": "confirmada",
+      "review_solicitada": false,
+      "created_at": "2026-07-05T12:58:00.000Z"
+    },
+    {
+      "id": "ap-9",
+      "tenant_id": "t-sonrisa",
+      "contact_id": "ct-27",
+      "fecha_hora": "2026-07-26T16:22:00.000Z",
+      "nota": "Seguimiento",
+      "estado": "cancelada",
+      "review_solicitada": false,
+      "created_at": "2026-07-01T12:56:00.000Z"
+    },
+    {
+      "id": "ap-10",
+      "tenant_id": "t-aura",
+      "contact_id": "ct-31",
+      "fecha_hora": "2026-07-27T14:00:00.000Z",
+      "nota": "Valoración",
+      "estado": "no_asistio",
+      "review_solicitada": false,
+      "created_at": "2026-07-14T12:18:00.000Z"
+    },
+    {
+      "id": "ap-11",
+      "tenant_id": "t-vital",
+      "contact_id": "ct-35",
+      "fecha_hora": "2026-08-16T12:11:00.000Z",
+      "nota": "Limpieza",
+      "estado": "asistio",
+      "review_solicitada": false,
+      "created_at": "2026-07-07T12:14:00.000Z"
+    },
+    {
+      "id": "ap-12",
+      "tenant_id": "t-sonrisa",
+      "contact_id": "ct-36",
+      "fecha_hora": "2026-08-23T15:59:00.000Z",
+      "nota": "Seguimiento",
+      "estado": "confirmada",
+      "review_solicitada": false,
+      "created_at": "2026-07-20T12:07:00.000Z"
+    },
+    {
+      "id": "ap-13",
+      "tenant_id": "t-aura",
+      "contact_id": "ct-40",
+      "fecha_hora": "2026-08-10T11:46:00.000Z",
+      "nota": "Limpieza",
+      "estado": "confirmada",
+      "review_solicitada": true,
+      "created_at": "2026-07-21T12:25:00.000Z"
+    },
+    {
+      "id": "ap-14",
+      "tenant_id": "t-vital",
+      "contact_id": "ct-44",
+      "fecha_hora": "2026-07-30T10:17:00.000Z",
+      "nota": "Primera visita",
+      "estado": "confirmada",
+      "review_solicitada": true,
+      "created_at": "2026-07-11T12:26:00.000Z"
+    },
+    {
+      "id": "ap-15",
+      "tenant_id": "t-sonrisa",
+      "contact_id": "ct-45",
+      "fecha_hora": "2026-08-19T13:42:00.000Z",
+      "nota": "Limpieza",
+      "estado": "no_asistio",
+      "review_solicitada": true,
+      "created_at": "2026-07-21T12:21:00.000Z"
+    },
+    {
+      "id": "ap-16",
+      "tenant_id": "t-aura",
+      "contact_id": "ct-49",
+      "fecha_hora": "2026-08-25T16:06:00.000Z",
+      "nota": "Limpieza",
+      "estado": "confirmada",
+      "review_solicitada": false,
+      "created_at": "2026-07-04T12:21:00.000Z"
+    },
+    {
+      "id": "ap-17",
+      "tenant_id": "t-vital",
+      "contact_id": "ct-53",
+      "fecha_hora": "2026-08-04T14:44:00.000Z",
+      "nota": "Primera visita",
+      "estado": "confirmada",
+      "review_solicitada": false,
+      "created_at": "2026-07-18T12:57:00.000Z"
+    },
+    {
+      "id": "ap-18",
+      "tenant_id": "t-sonrisa",
+      "contact_id": "ct-54",
+      "fecha_hora": "2026-07-30T15:44:00.000Z",
+      "nota": "Valoración",
+      "estado": "agendada",
+      "review_solicitada": true,
+      "created_at": "2026-07-15T12:48:00.000Z"
+    },
+    {
+      "id": "ap-19",
+      "tenant_id": "t-aura",
+      "contact_id": "ct-58",
+      "fecha_hora": "2026-07-30T16:11:00.000Z",
+      "nota": "Valoración",
+      "estado": "agendada",
+      "review_solicitada": false,
+      "created_at": "2026-07-17T12:37:00.000Z"
+    },
+    {
+      "id": "ap-20",
+      "tenant_id": "t-vital",
+      "contact_id": "ct-62",
+      "fecha_hora": "2026-08-22T17:30:00.000Z",
+      "nota": "Limpieza",
+      "estado": "confirmada",
+      "review_solicitada": true,
+      "created_at": "2026-07-15T12:05:00.000Z"
+    },
+    {
+      "id": "ap-21",
+      "tenant_id": "t-sonrisa",
+      "contact_id": "ct-63",
+      "fecha_hora": "2026-07-28T12:09:00.000Z",
+      "nota": "Primera visita",
+      "estado": "no_asistio",
+      "review_solicitada": false,
+      "created_at": "2026-07-14T12:46:00.000Z"
+    },
+    {
+      "id": "ap-22",
+      "tenant_id": "t-aura",
+      "contact_id": "ct-67",
+      "fecha_hora": "2026-08-07T09:50:00.000Z",
+      "nota": "Revisión general",
+      "estado": "no_asistio",
+      "review_solicitada": false,
+      "created_at": "2026-07-17T12:55:00.000Z"
+    },
+    {
+      "id": "ap-23",
+      "tenant_id": "t-vital",
+      "contact_id": "ct-71",
+      "fecha_hora": "2026-08-18T14:03:00.000Z",
+      "nota": "Valoración",
+      "estado": "asistio",
+      "review_solicitada": false,
+      "created_at": "2026-07-05T12:40:00.000Z"
+    },
+    {
+      "id": "ap-24",
+      "tenant_id": "t-sonrisa",
+      "contact_id": "ct-72",
+      "fecha_hora": "2026-08-26T12:15:00.000Z",
+      "nota": "Limpieza",
+      "estado": "confirmada",
+      "review_solicitada": true,
+      "created_at": "2026-07-21T12:20:00.000Z"
+    },
+    {
+      "id": "ap-25",
+      "tenant_id": "t-aura",
+      "contact_id": "ct-76",
+      "fecha_hora": "2026-08-17T18:25:00.000Z",
+      "nota": "Seguimiento",
+      "estado": "confirmada",
+      "review_solicitada": false,
+      "created_at": "2026-07-13T12:53:00.000Z"
+    },
+    {
+      "id": "ap-26",
+      "tenant_id": "t-vital",
+      "contact_id": "ct-80",
+      "fecha_hora": "2026-08-15T11:30:00.000Z",
+      "nota": "Seguimiento",
+      "estado": "asistio",
+      "review_solicitada": true,
+      "created_at": "2026-07-08T12:04:00.000Z"
+    },
+    {
+      "id": "ap-27",
+      "tenant_id": "t-sonrisa",
+      "contact_id": "ct-81",
+      "fecha_hora": "2026-08-07T11:37:00.000Z",
+      "nota": "Valoración",
+      "estado": "agendada",
+      "review_solicitada": true,
+      "created_at": "2026-07-03T12:32:00.000Z"
+    },
+    {
+      "id": "ap-28",
+      "tenant_id": "t-aura",
+      "contact_id": "ct-85",
+      "fecha_hora": "2026-08-23T13:49:00.000Z",
+      "nota": "Valoración",
+      "estado": "agendada",
+      "review_solicitada": false,
+      "created_at": "2026-06-28T12:27:00.000Z"
+    },
+    {
+      "id": "ap-29",
+      "tenant_id": "t-vital",
+      "contact_id": "ct-89",
+      "fecha_hora": "2026-07-25T15:54:00.000Z",
+      "nota": "Revisión general",
+      "estado": "asistio",
+      "review_solicitada": false,
+      "created_at": "2026-06-24T12:06:00.000Z"
+    }
+  ],
+  "campaigns": [],
+  "messages": [],
+  "usage_counters": [
+    {
+      "tenant_id": "t-sonrisa",
+      "mes": "2026-08",
+      "utility_usados": 12,
+      "marketing_usados": 0
+    },
+    {
+      "tenant_id": "t-aura",
+      "mes": "2026-08",
+      "utility_usados": 8,
+      "marketing_usados": 0
+    },
+    {
+      "tenant_id": "t-vital",
+      "mes": "2026-08",
+      "utility_usados": 5,
+      "marketing_usados": 0
+    }
+  ],
+  "exclusion_list": [
+    {
+      "id": "ex-31",
+      "tenant_id": "t-aura",
+      "telefono": "+525580761273",
+      "motivo": "opt_out",
+      "fecha": "2026-07-17T12:12:00.000Z"
+    },
+    {
+      "id": "ex-35",
+      "tenant_id": "t-vital",
+      "telefono": "+525589870187",
+      "motivo": "opt_out",
+      "fecha": "2026-08-08T12:13:00.000Z"
+    },
+    {
+      "id": "ex-51",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525518502522",
+      "motivo": "opt_out",
+      "fecha": "2026-08-06T12:40:00.000Z"
+    },
+    {
+      "id": "ex-73",
+      "tenant_id": "t-aura",
+      "telefono": "+525573188357",
+      "motivo": "opt_out",
+      "fecha": "2026-08-10T12:00:00.000Z"
+    },
+    {
+      "id": "ex-81",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525544278431",
+      "motivo": "opt_out",
+      "fecha": "2026-08-14T12:38:00.000Z"
+    },
+    {
+      "id": "ex-94",
+      "tenant_id": "t-aura",
+      "telefono": "+525522059212",
+      "motivo": "opt_out",
+      "fecha": "2026-07-12T12:53:00.000Z"
+    },
+    {
+      "id": "ex-108",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525584578490",
+      "motivo": "opt_out",
+      "fecha": "2026-07-30T12:16:00.000Z"
+    },
+    {
+      "id": "ex-135",
+      "tenant_id": "t-sonrisa",
+      "telefono": "+525557736921",
+      "motivo": "opt_out",
+      "fecha": "2026-08-04T12:55:00.000Z"
+    },
+    {
+      "id": "ex-146",
+      "tenant_id": "t-vital",
+      "telefono": "+525511770964",
+      "motivo": "opt_out",
+      "fecha": "2026-07-18T12:12:00.000Z"
+    },
+    {
+      "id": "ex-179",
+      "tenant_id": "t-vital",
+      "telefono": "+525536866734",
+      "motivo": "opt_out",
+      "fecha": "2026-07-16T12:41:00.000Z"
+    },
+    {
+      "id": "ex-190",
+      "tenant_id": "t-aura",
+      "telefono": "+525577301469",
+      "motivo": "opt_out",
+      "fecha": "2026-07-13T12:55:00.000Z"
+    }
+  ],
+  "events_log": [
+    {
+      "id": "ev-seed",
+      "tenant_id": null,
+      "tipo": "seed_cargado",
+      "payload": {
+        "clinicas": 3,
+        "contactos": 200,
+        "resenas": 40,
+        "citas": 30
+      },
+      "created_at": "2026-08-21T15:36:25.746Z"
+    }
+  ],
+  "opinions": [
+    {
+      "id": "op-0",
+      "tenant_id": "t-sonrisa",
+      "contact_id": null,
+      "satisfaccion": "regular",
+      "comentario_privado": null,
+      "fue_a_google": true,
+      "created_at": "2026-08-01T12:42:00.000Z"
+    },
+    {
+      "id": "op-1",
+      "tenant_id": "t-aura",
+      "contact_id": null,
+      "satisfaccion": "mala",
+      "comentario_privado": null,
+      "fue_a_google": true,
+      "created_at": "2026-08-18T12:59:00.000Z"
+    },
+    {
+      "id": "op-2",
+      "tenant_id": "t-vital",
+      "contact_id": null,
+      "satisfaccion": "regular",
+      "comentario_privado": "La sala de espera podría tener más revistas.",
+      "fue_a_google": false,
+      "created_at": "2026-08-14T12:17:00.000Z"
+    },
+    {
+      "id": "op-3",
+      "tenant_id": "t-sonrisa",
+      "contact_id": null,
+      "satisfaccion": "excelente",
+      "comentario_privado": null,
+      "fue_a_google": true,
+      "created_at": "2026-08-19T12:47:00.000Z"
+    },
+    {
+      "id": "op-4",
+      "tenant_id": "t-aura",
+      "contact_id": null,
+      "satisfaccion": "excelente",
+      "comentario_privado": null,
+      "fue_a_google": true,
+      "created_at": "2026-08-12T12:36:00.000Z"
+    },
+    {
+      "id": "op-5",
+      "tenant_id": "t-vital",
+      "contact_id": null,
+      "satisfaccion": "regular",
+      "comentario_privado": "La sala de espera podría tener más revistas.",
+      "fue_a_google": false,
+      "created_at": "2026-08-04T12:11:00.000Z"
+    }
+  ]
+}
