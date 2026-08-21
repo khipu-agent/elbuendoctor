@@ -42,3 +42,9 @@ Registro de decisiones técnicas (SPEC §0). Cada decisión anota el porqué.
 ## #10 — Regex del filtro de cumplimiento sin `\b` en patrones acentuados
 **Fecha:** Fase 1 · **Contexto:** `\b` en JavaScript es ASCII-only; "me curó" se colaba por la ó.
 **Decisión:** patrones con acentos no usan `\b`. Detectado por el test `cumplimiento.test.ts`.
+
+## #11 — Semilla demo incrustada por import estático (Vercel serverless)
+**Contexto:** en Vercel cada ruta es una función serverless y el empaquetado (NFT) solo incluye archivos alcanzables por imports. `data/demo-db.json` leído con `fs.readFile(process.cwd()/...)` NO existía en ejecución → la base arrancaba vacía y el login de la cuenta de prueba fallaba con "correo y contraseña no coinciden".
+**Decisión:** `lib/db/json-store.ts` importa la semilla estáticamente (`import semillaJson from "../../data/demo-db.json"`) y la usa para sembrar `/tmp` en la primera lectura de cada instancia cuando `VERCEL=1`. Local y Docker siguen leyendo/escribiendo el archivo real.
+**Límite conocido (demo):** cada función serverless tiene su propio `/tmp` efímero; las mutaciones (aprobar respuestas, registros) viven solo mientras la instancia esté caliente. La persistencia real llega con Supabase (§13). El recorrido de aceptación §15.5 funciona porque cada página y sus server actions comparten función.
+**Alternativa descartada:** `experimental.outputFileTracingIncludes` — más frágil que el import estático y no garantiza el archivo en todas las funciones.
