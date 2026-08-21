@@ -66,9 +66,15 @@ export function dataDir(): string {
   return process.env.VITEST_POOL_ID ? path.join(base, `pool-${process.env.VITEST_POOL_ID}`) : base;
 }
 
-// Ruta del respaldo semilla incluido en el repo (solo lectura en Vercel).
-function bundledSeedFile(): string {
-  return path.join(process.cwd(), "data", "demo-db.json");
+// Semilla de demostración importada de forma ESTÁTICA: en Vercel las funciones
+// serverless solo empaquetan archivos alcanzables por imports, así que un
+// fs.readFile(process.cwd()/data/...) NO existe en tiempo de ejecución.
+// Al importarla aquí, el bundler la incrusta y la cuenta de prueba siempre existe.
+// (En local y en Docker el flujo normal sigue leyendo/escribiendo data/demo-db.json.)
+import semillaJson from "../../data/demo-db.json";
+
+function semillaDemo(): Database {
+  return { ...emptyDb(), ...(semillaJson as Partial<Database>) };
 }
 
 function dbFile(): string {
@@ -85,16 +91,16 @@ async function readFromDisk(): Promise<Database> {
     return { ...emptyDb(), ...(JSON.parse(raw) as Partial<Database>) };
   } catch {
     // En Vercel el archivo mutable vive en /tmp y arranca vacío en cada instancia:
-    // se copia la semilla del repo para que la cuenta de prueba siempre exista.
+    // se siembra desde el JSON incrustado para que la cuenta de prueba siempre exista.
     if (process.env.VERCEL && !process.env.EBD_DATA_DIR) {
+      const semilla = semillaDemo();
       try {
-        const raw = await fs.readFile(bundledSeedFile(), "utf8");
         await fs.mkdir(dataDir(), { recursive: true });
-        await fs.writeFile(dbFile(), raw, "utf8");
-        return { ...emptyDb(), ...(JSON.parse(raw) as Partial<Database>) };
+        await fs.writeFile(dbFile(), JSON.stringify(semilla, null, 2), "utf8");
       } catch {
-        // Si la semilla no está disponible, se arranca vacío (modo registro).
+        // Si /tmp no está disponible, igual se devuelve la semilla en memoria.
       }
+      return semilla;
     }
     return emptyDb();
   }
