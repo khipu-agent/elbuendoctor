@@ -56,6 +56,12 @@ export async function obtenerTenantPorSlug(slug: string): Promise<Tenant | null>
   return db.tenants.find((t) => t.slug === slug) ?? null;
 }
 
+/** Lista pública de tenants (solo para sitemap/SEO; no expone datos sensibles). */
+export async function listarTenants(): Promise<Pick<Tenant, "id" | "slug" | "nombre">[]> {
+  const db = await loadDb();
+  return db.tenants.map((t) => ({ id: t.id, slug: t.slug, nombre: t.nombre }));
+}
+
 export async function obtenerTenantPorId(id: string): Promise<Tenant | null> {
   const db = await loadDb();
   return db.tenants.find((t) => t.id === id) ?? null;

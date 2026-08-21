@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Estrellas from "@/components/Estrellas";
 import { nombreConInicial } from "@/lib/ai/compliance";
@@ -11,6 +12,30 @@ import {
 } from "@/lib/db";
 
 export const revalidate = 3600; // SSR con caché: micro-página v1 (SPEC §6.4)
+
+// SEO por clínica: el título y la descripción salen de los datos del onboarding.
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
+  const tenant = await obtenerTenantPorSlug(params.slug);
+  if (!tenant) return { title: "Clínica no encontrada" };
+  const titular = tenant.pagina_titular || tenant.nombre;
+  const descripcion =
+    tenant.pagina_descripcion ||
+    `${tenant.nombre} — agenda por WhatsApp y lee las reseñas de sus pacientes.`;
+  return {
+    title: `${titular} — ${tenant.nombre}`,
+    description: descripcion,
+    openGraph: {
+      title: `${titular} — ${tenant.nombre}`,
+      description: descripcion,
+      type: "website",
+      locale: "es_MX",
+    },
+  };
+}
 
 // Micro-página pública del tenant. En producción se sirve desde
 // {slug}.elbuendoctor.com.mx vía middleware; /p/{slug} es la ruta equivalente

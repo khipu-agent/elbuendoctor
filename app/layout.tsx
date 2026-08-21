@@ -14,10 +14,38 @@ const inter = Inter({
   display: "swap",
 });
 
+const urlBase = process.env.NEXT_PUBLIC_SITE_URL ?? "https://elbuendoctor.vercel.app";
+
 export const metadata: Metadata = {
-  title: "ElBuenDoctor — Reseñas de Google y WhatsApp para consultorios y clínicas en México",
+  metadataBase: new URL(urlBase),
+  title: {
+    default: "ElBuenDoctor — Reseñas de Google y WhatsApp para consultorios y clínicas en México",
+    template: "%s | ElBuenDoctor",
+  },
   description:
     "Reseñas en Google, citas confirmadas y pacientes que regresan — todo por WhatsApp. Mensual, sin permanencia.",
+  keywords: [
+    "reseñas Google clínicas",
+    "WhatsApp consultorios",
+    "reputación online médicos México",
+    "confirmación de citas WhatsApp",
+    "reactivación de pacientes",
+  ],
+  openGraph: {
+    type: "website",
+    locale: "es_MX",
+    siteName: "ElBuenDoctor",
+    title: "ElBuenDoctor — Que te elijan en Google",
+    description:
+      "Reseñas en Google, citas confirmadas y pacientes que regresan — todo por WhatsApp. Mensual, sin permanencia.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ElBuenDoctor — Que te elijan en Google",
+    description:
+      "Reseñas en Google, citas confirmadas y pacientes que regresan — todo por WhatsApp.",
+  },
+  robots: { index: true, follow: true },
   icons: { icon: "/icon.svg" },
 };
 

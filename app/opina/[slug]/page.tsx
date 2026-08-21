@@ -1,8 +1,22 @@
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import { obtenerGoogleAccount, obtenerTenantPorSlug } from "@/lib/db";
 import FlujoOpina from "./flujo";
 
-export const metadata = { title: "¿Cómo fue tu experiencia?" };
+// Página de paciente vía QR: título personalizado; noindex (son páginas de
+// acción, no de contenido — evita páginas "delgadas" duplicadas en Google).
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
+  const tenant = await obtenerTenantPorSlug(params.slug);
+  if (!tenant) return { title: "¿Cómo fue tu experiencia?" };
+  return {
+    title: `¿Cómo fue tu experiencia en ${tenant.nombre}?`,
+    robots: { index: false, follow: false },
+  };
+}
 
 // Flujo público de opinión (SPEC §6.1, disparador QR). INVARIANTE §10.2:
 // TODOS los caminos terminan mostrando el botón "Dejar mi opinión en Google" —
