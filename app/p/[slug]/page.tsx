@@ -21,15 +21,16 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const tenant = await obtenerTenantPorSlug(params.slug);
   if (!tenant) return { title: "Clínica no encontrada" };
-  const titular = tenant.pagina_titular || tenant.nombre;
+  const titular = tenant.pagina_titular?.trim();
+  const titulo = titular && titular !== tenant.nombre ? `${titular} — ${tenant.nombre}` : tenant.nombre;
   const descripcion =
     tenant.pagina_descripcion ||
     `${tenant.nombre} — agenda por WhatsApp y lee las reseñas de sus pacientes.`;
   return {
-    title: `${titular} — ${tenant.nombre}`,
+    title: titulo,
     description: descripcion,
     openGraph: {
-      title: `${titular} — ${tenant.nombre}`,
+      title: titulo,
       description: descripcion,
       type: "website",
       locale: "es_MX",
