@@ -44,10 +44,12 @@ export default function PanelResenas({
   resenas,
   slug,
   opinionesRecientes,
+  urlGoogleNegocio,
 }: {
   resenas: ResenaItem[];
   slug: string;
   opinionesRecientes: OpinionItem[];
+  urlGoogleNegocio: string;
 }) {
   const [ocupado, iniciar] = useTransition();
   const [aviso, setAviso] = useState<string>();
@@ -66,6 +68,7 @@ export default function PanelResenas({
           disabled={ocupado}
           onClick={() =>
             iniciar(async () => {
+              setAviso(undefined);
               const r = await sincronizarResenas();
               setAviso(
                 r.nuevas > 0
@@ -83,6 +86,7 @@ export default function PanelResenas({
           disabled={ocupado}
           onClick={() =>
             iniciar(async () => {
+              setAviso(undefined);
               await simularResenaDePrueba();
               setAviso("Llegó una reseña de prueba: mira la alerta en Mensajes y aprueba la respuesta aquí abajo.");
             })
@@ -153,6 +157,7 @@ export default function PanelResenas({
                       disabled={ocupado}
                       onClick={() =>
                         iniciar(async () => {
+                          setAviso(undefined);
                           await aprobarYPublicar(r.id, editando[r.id] ?? r.respuesta_ia ?? "");
                           setAviso("Respuesta publicada. En esta etapa, también puedes copiarla y pegarla en tu consola de Google.");
                         })
@@ -165,16 +170,26 @@ export default function PanelResenas({
                       type="button"
                       onClick={() => {
                         navigator.clipboard?.writeText(editando[r.id] ?? r.respuesta_ia ?? "");
-                        window.open("https://business.google.com/", "_blank", "noopener");
+                        // Modo degradado (§15.9): se abre la ficha PÚBLICA de reseñas del
+                        // negocio, donde el dueño responde desde su cuenta de Google.
+                        // business.google.com genérico confunde: parece que "no lleva a nada".
+                        window.open(urlGoogleNegocio, "_blank", "noopener");
+                        setAviso("Respuesta copiada. En Google: entra a la reseña y pégala como respuesta del negocio.");
                       }}
                       className="rounded-full border border-tinta/20 px-4 py-2 text-sm font-medium text-tinta/70"
                     >
-                      Copiar y abrir Google
+                      Copiar y abrir mis reseñas en Google
                     </button>
                     <button
                       type="button"
                       disabled={ocupado}
-                      onClick={() => iniciar(async () => ignorarResena(r.id))}
+                      onClick={() =>
+                        iniciar(async () => {
+                          setAviso(undefined);
+                          await ignorarResena(r.id);
+                          setAviso("Anotada como “sin respuesta”. Siempre puedes responderla después desde Google.");
+                        })
+                      }
                       className="rounded-full px-4 py-2 text-sm text-tinta/50 hover:text-tinta"
                     >
                       No responder

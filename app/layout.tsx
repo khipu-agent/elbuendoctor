@@ -14,7 +14,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const urlBase = process.env.NEXT_PUBLIC_SITE_URL ?? "https://elbuendoctor.vercel.app";
+const urlBase = process.env.NEXT_PUBLIC_SITE_URL ?? "https://elbuendoctor.com.mx";
 
 export const metadata: Metadata = {
   metadataBase: new URL(urlBase),

@@ -1,5 +1,5 @@
 import { obtenerSesion } from "@/lib/auth";
-import { obtenerOpiniones, obtenerResenas, obtenerUso } from "@/lib/db";
+import { obtenerGoogleAccount, obtenerOpiniones, obtenerResenas, obtenerUso } from "@/lib/db";
 import { redirect } from "next/navigation";
 import { PLANES } from "@/lib/plans";
 import PanelResenas from "./panel-resenas";
@@ -11,10 +11,11 @@ export default async function Dashboard() {
   if (!sesion) redirect("/login");
   const { tenant, user } = sesion;
 
-  const [resenas, opiniones, uso] = await Promise.all([
+  const [resenas, opiniones, uso, google] = await Promise.all([
     obtenerResenas(tenant.id),
     obtenerOpiniones(tenant.id),
     obtenerUso(tenant.id),
+    obtenerGoogleAccount(tenant.id),
   ]);
   const plan = PLANES[tenant.plan];
 
@@ -56,6 +57,11 @@ export default async function Dashboard() {
       </div>
 
       <PanelResenas
+        urlGoogleNegocio={
+          google?.place_id
+            ? `https://search.google.com/local/reviews?placeid=${encodeURIComponent(google.place_id)}`
+            : `https://www.google.com/search?q=${encodeURIComponent(tenant.nombre + " opiniones")}`
+        }
         resenas={resenas.map((r) => ({
           id: r.id,
           rating: r.rating,

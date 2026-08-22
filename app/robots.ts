@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const urlBase = process.env.NEXT_PUBLIC_SITE_URL ?? "https://elbuendoctor.vercel.app";
+const urlBase = process.env.NEXT_PUBLIC_SITE_URL ?? "https://elbuendoctor.com.mx";
 
 // Se indexan la landing y las micro-páginas públicas; el panel, la API y el
 // onboarding quedan fuera del rastreo.

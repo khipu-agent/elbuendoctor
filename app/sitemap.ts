@@ -3,7 +3,7 @@ import { listarTenants } from "@/lib/db";
 
 export const dynamic = "force-dynamic";
 
-const urlBase = process.env.NEXT_PUBLIC_SITE_URL ?? "https://elbuendoctor.vercel.app";
+const urlBase = process.env.NEXT_PUBLIC_SITE_URL ?? "https://elbuendoctor.com.mx";
 
 // Sitemap dinámico: páginas comerciales + micro-página pública de cada clínica.
 // /opina se excluye a propósito (noindex — página de acción, no de contenido).
